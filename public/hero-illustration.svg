@@ -1,0 +1,49 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Shape -->
+  <rect x="50" y="50" width="500" height="300" rx="20" fill="#F5F5F5"/>
+  
+  <!-- Business Building -->
+  <rect x="100" y="150" width="150" height="150" rx="5" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <rect x="135" y="200" width="40" height="60" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <rect x="145" y="240" width="20" height="20" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <rect x="110" y="170" width="30" height="20" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <rect x="150" y="170" width="30" height="20" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <rect x="190" y="170" width="30" height="20" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  
+  <!-- AI Energy Beam -->
+  <path d="M350 100C400 150 400 200 350 250" stroke="#0057D9" stroke-width="8" stroke-linecap="round" stroke-dasharray="15 10"/>
+  <path d="M320 120C370 170 370 180 320 230" stroke="#0057D9" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <path d="M290 140C340 190 340 160 290 210" stroke="#0057D9" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+  
+  <!-- AI Hub -->
+  <circle cx="400" cy="175" r="70" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <circle cx="400" cy="175" r="50" fill="#0057D9" opacity="0.2"/>
+  
+  <!-- Digital Elements -->
+  <path d="M370 150L390 170L410 150" stroke="#0057D9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M370 200L390 180L410 200" stroke="#0057D9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="390" y1="140" x2="390" y2="210" stroke="#0057D9" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Data Circles -->
+  <circle cx="440" cy="155" r="10" fill="#FFFFFF" stroke="#0057D9" stroke-width="2"/>
+  <circle cx="440" cy="195" r="10" fill="#FFFFFF" stroke="#0057D9" stroke-width="2"/>
+  <circle cx="360" cy="155" r="10" fill="#FFFFFF" stroke="#0057D9" stroke-width="2"/>
+  <circle cx="360" cy="195" r="10" fill="#FFFFFF" stroke="#0057D9" stroke-width="2"/>
+  
+  <!-- Data Lines -->
+  <line x1="425" y1="180" x2="375" y2="180" stroke="#0057D9" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <line x1="400" y1="155" x2="400" y2="195" stroke="#0057D9" stroke-width="1.5" stroke-dasharray="4 2"/>
+  
+  <!-- Small Business Owner -->
+  <circle cx="220" cy="130" r="25" fill="#000000"/>
+  <path d="M200 150C200 170 240 170 240 150" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Growth Chart -->
+  <path d="M450 250L500 200L550 170" stroke="#0057D9" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="450" cy="250" r="5" fill="#0057D9"/>
+  <circle cx="500" cy="200" r="5" fill="#0057D9"/>
+  <circle cx="550" cy="170" r="5" fill="#0057D9"/>
+  
+  <!-- Lightning Bolt -->
+  <path d="M270 100L260 140L280 145L250 200" stroke="#0057D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 

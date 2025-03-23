@@ -1,0 +1,442 @@
+1. Introduction
+This document outlines the requirements for the initial website of [Your Company Name], an AI platform designed for small and medium-sized businesses (SMBs). The website will serve as the primary marketing and sales tool for Phase 1, aiming to attract SMB owners, educate them on AI benefits, and convert them into consultation leads. It includes six core pages: Home, How It Works, Solutions, Why Us, About, and Pricing, each with specific sections, design considerations, functionality, and success metrics. The design uses a simple black-and-white color scheme inspired by Notion's clean aesthetic, with royal blue as the main accent color, aligning with the user's request. The Home page layout is inspired by Salesforce's effective B2B SaaS structure, with a prominent CTA and email capture form above the fold, followed by a "How It Works" video below the fold.
+
+**NOTE: ALL COMPONENTS WILL BE BUILT FROM SCRATCH. No external component libraries or frameworks will be used for any UI elements. Every button, form, card, navigation item, and other interface elements will be custom-built to ensure complete control over the design and functionality.**
+
+**IMPORTANT DESIGN STANDARD: This website must reflect a modern, high-tech fast-growing company, NOT an MVP. All UI components and visuals must be professionally designed, highly polished, and reflect the quality of established industry leaders. The finished product should convey innovation, reliability, and premium quality through its visual execution.**
+
+2. Goals
+Generate Leads: Capture SMB owner contact information for follow-up.
+Educate Visitors: Simplify AI concepts and highlight practical benefits for SMBs.
+Build Trust: Establish [Your Company Name] as a credible, approachable AI partner.
+Drive Bookings: Encourage free consultation bookings via Calendly.
+Communicate Value: Present a transparent, flexible pricing model that reassures visitors.
+3. Target Audience
+Primary Users: SMB owners and decision-makers (10-500 employees).
+Industries: Retail, Hospitality, Professional Services, Manufacturing (initial focus).
+Tech Savviness: Varies; many lack AI expertise and seek easy, business-focused solutions.
+Pain Points: Manual task overload, limited tech skills, need for efficiency, growth, and affordability.
+4. Color Scheme and Design Principles
+The website adopts a simple black-and-white color scheme with royal blue as the main accent color, inspired by Notion's minimalist design and adapted from Salesforce's effective use of blue accents. This ensures a clean, professional, and trustworthy look that resonates with SMB owners.
+
+Primary Colors:
+Black (#000000): Used for headlines, body text, and navigation links.
+White (#FFFFFF): Background color for all pages and sections.
+Accent Color:
+Royal Blue (#0057D9): Used for CTAs, buttons, icons, borders, and key interactive elements.
+Secondary Colors:
+Light Gray (#F5F5F5): For subtle backgrounds or dividers (e.g., footer).
+Dark Gray (#333333): For secondary text or less prominent elements.
+
+Design Principles:
+Minimalism: Avoid unnecessary colors or elements to maintain focus, mirroring Notion's clean aesthetic.
+Contrast: Ensure high contrast between text and backgrounds for readability (black text on white).
+Consistency: Use royal blue consistently for all CTAs and interactive elements, inspired by Salesforce's effective accent usage.
+Whitespace: Leverage ample spacing to create an uncluttered, approachable design, as seen in both Notion and Salesforce layouts.
+Professional Polish: All components must have refined details including:
+   - Subtle shadows and depth effects for buttons and cards (2-4px subtle drop shadows)
+   - Smooth hover states and transitions (200-300ms ease transitions)
+   - Precise spacing and alignment throughout all elements (8px grid system)
+   - High-quality icons and illustrations (vector-based, consistent style)
+   - Refined typography with appropriate line heights and letter spacing
+   - Subtle animations for interactive elements that enhance user experience
+
+Visual Sophistication: The UI should convey technological advancement through:
+   - Clean, geometric shapes and forms
+   - Precise alignment and visual hierarchy
+   - Subtle gradients where appropriate (particularly in illustrations)
+   - Deliberate use of negative space to create visual impact
+   - Consistent visual language across all components
+   - Integration of subtle motion design elements for key interactions
+
+5. Page-Specific Requirements
+5.1 Home (Landing Page)
+5.1.1 Page Name: Home
+
+5.1.2 Purpose:
+
+Create a strong first impression and entry point.
+Convey the core value: hassle-free AI for SMBs.
+Drive immediate consultation bookings and email captures above the fold.
+Educate visitors with a "Demo Video" below the fold that requires email submission first.
+5.1.3 Target Audience: All visitors, primarily SMB owners.
+
+5.1.4 Key Features/Sections:
+
+Header:
+Logo (Left): [Your Company Name] in black.
+Navigation Tabs (Centered): "How It Works," "Solutions," "Why Us," "About," "Pricing" in black.
+CTA Button (Right): "Book a Free Consultation" in royal blue with white text.
+Layout: Sticky header, inspired by Salesforce's navigation bar, ensuring it remains visible while scrolling.
+Hero Section (Above the Fold):
+Headline: "Grow Smarter with AI." in black, styled in a large, bold font (e.g., 3.5rem, similar to Salesforce's "Grow faster and smarter").
+Subheadline: "Supercharge your small business with AI tools that automate tasks, save time, and boost growth—all set up for you." in black, styled in a smaller font (e.g., 1.5rem).
+CTA Buttons:
+Primary CTA: "Book a Demo" in royal blue with white text, styled as a prominent button (e.g., padding: 12px 24px, border-radius: 8px).
+Secondary CTA: "Watch Demo" in white with a royal blue border, styled as a secondary button (e.g., padding: 12px 24px, border-radius: 8px).
+Business Illustration:
+A professional illustration of a business being supercharged by AI tools, emphasizing efficiency and growth.
+Style: Clean, modern vector illustration in grayscale with royal blue accents.
+Position: Right side of the hero section, balancing the text and CTAs on the left.
+Demo Video Section (Below the Fold):
+Title: "Supercharge Your Workflow Any Way You Want" in black.
+Email Capture Modal (for Video Access):
+Trigger: When users click "Watch Demo" button in hero section or directly in the video section.
+Design: Clean modal window with a form requesting the visitor's email address.
+Copy: "Enter your email to access our video and see how we can transform your business with AI."
+Fields: Email input (required, validated).
+Submit Button: "Watch Now" in royal blue with white text.
+Confirmation: After submitting email, the video should automatically begin playing.
+Video Content:
+Duration: 60-90 seconds to keep it concise and engaging.
+Style: Animated explainer video with a clean, minimalist design in black and white with royal blue accents, inspired by Salesforce's use of product visuals.
+Narration: A friendly, professional voiceover explaining the process:
+"Running a small business is tough—manual tasks eat up your time and slow your growth."
+"At [Your Company Name], we supercharge your workflow with AI tools tailored to your needs."
+"Step 1: We learn about your business in a quick discovery call."
+"Step 2: We design a custom AI plan, picking the best tools for you."
+"Step 3: We set everything up and support your team—so you can focus on growing."
+"From smarter meetings to automated tasks, our AI solutions save you hours every week."
+"Ready to transform your business? Book a free consultation today!"
+Visuals:
+Show a small business owner struggling with manual tasks (e.g., scheduling, emails).
+Transition to AI tools taking over (e.g., a calendar icon for meetings, an email icon for automation).
+Highlight the 3-step process with simple animations (e.g., a phone for the call, a checklist for the plan, a gear for setup).
+End with a happy business owner and a royal blue "Book Now" button.
+Technical Details:
+Format: MP4, hosted on a platform like Vimeo or YouTube for fast loading.
+Autoplay: Enabled after email submission; include a play button in royal blue with a thumbnail of the video's first frame (e.g., a business owner at a desk).
+Controls: Standard video controls in royal blue to match the theme.
+Fallback: If the video fails to load, display a static image with a "Watch the Video" link in royal blue.
+Trust Element Section:
+Text: "Powered by cutting-edge AI from top innovators." in black.
+Visual: Generic AI icons or badges in royal blue, styled as a horizontal row, similar to Salesforce's "Agentforce is trusted by" section.
+Success Stories Section:
+Title: "See How SMBs Like Yours Are Winning with AI" in black.
+Testimonial 1:
+Quote: "'We cut meeting time by 50% with AI tools set up by [Your Company Name]. It's like having an extra team member!'" in black.
+Attribution: - Sarah T., Owner, GreenLeaf Retail (Chicago, IL) in dark gray.
+Testimonial 2:
+Quote: "'Our customer support went from chaotic to seamless overnight. The setup was so easy—I wish we'd done this sooner.'" in black.
+Attribution: - Mike R., Manager, BlueSky Hospitality (Austin, TX) in dark gray.
+Testimonial 3:
+Quote: "'Since partnering with [Your Company Name], our productivity has skyrocketed. The AI tools handle all our scheduling and data entry, freeing up hours each week.'" in black.
+Attribution: - Emily S., Owner, Urban Eats Cafe (Seattle, WA) in dark gray.
+Outro: "Ready for your success story? Let's make it happen." in black.
+Layout: Inspired by Salesforce's testimonial pop-ups, styled as a carousel with royal blue navigation dots.
+5.1.5 Design Considerations:
+
+Hero:
+Background: white with a grayscale illustration on the right, maintaining the black-and-white theme.
+Text: black for headline and subheadline, royal blue for CTAs, mirroring Salesforce's clean hero section.
+Form: royal blue border around the email input, black label, royal blue submit button.
+Video Section:
+Email Modal: Clean, white background with royal blue accents, appearing as an overlay.
+Video player: black and white with royal blue play button and controls, inspired by Salesforce's video section.
+Description: black text, royal blue CTA, aligned to the right of the video.
+Clean, modern look with clear hierarchy: headings in black, body text in black, CTAs in royal blue.
+Mobile-responsive, fast-loading, consistent branding.
+5.1.6 Functionality/Interactions:
+
+Navigation: Functional links to all pages.
+CTA Buttons:
+"Book a Demo" embeds Calendly widget inline or in a modal (https://calendly.com/yourcompany/consultation).
+"Watch Demo" scrolls to the video section and triggers the email capture modal.
+Email Capture Modal:
+Client-side validation for email format.
+Error messages in royal blue for invalid inputs.
+Submit to CRM/email list.
+After submission, automatically close the modal and play the video.
+Video:
+Play button triggers email modal if no email has been submitted.
+On mobile, video scales to fit screen width with controls visible.
+Email Gating: Remember users who have submitted an email so they don't need to resubmit on repeat visits (using browser storage).
+5.1.7 Metrics for Success:
+
+Conversion Rate: Email submissions and consultation bookings vs. visits (target: 2-5%).
+Bounce Rate: Low percentage.
+Time on Page: Adequate engagement time, especially video views.
+CTA CTR: Track clicks on "Book a Demo" and "Watch Demo."
+Video Engagement: Track play rate and completion rate (target: 50% completion).
+Email Capture Rate: Percentage of video viewers who submit email (target: 70%+).
+5.1.8 Technical Requirements:
+
+SEO: Keywords like "AI for small business," "AI consulting SMB."
+Mobile responsiveness.
+Fast load speed (optimize video, lazy load assets).
+HTTPS (SSL certificate).
+Analytics tracking (e.g., Google Analytics) with video event tracking.
+Email storage and management integration.
+5.2 How It Works
+5.2.1 Page Name: How It Works
+
+5.2.2 Purpose:
+
+Outline the 3-step process of adopting AI with [Your Company Name].
+Reduce perceived complexity and build confidence.
+5.2.3 Target Audience: SMB owners hesitant about AI implementation.
+
+5.2.4 Key Features/Sections:
+
+Header: Same as Home.
+Headline: "How We Bring AI to Your Business in 3 Easy Steps" in black.
+Intro: "We take the complexity out of AI so you can focus on what matters—running your business. Here's how it works:" in black.
+Step 1:
+Title: "1. Free Discovery Call" in royal blue.
+Copy: "We start with a 30-minute chat to learn about your business, your goals, and your challenges. No pressure, no jargon—just a conversation to find where AI can help." in black.
+Step 2:
+Title: "2. Custom AI Plan" in royal blue.
+Copy: "Our team designs a tailored solution, picking the best AI tools for your needs—whether it's automating tasks, managing emails, or supporting customers. We handle the details so you don't have to." in black.
+Step 3:
+Title: "3. Full Setup & Support" in royal blue.
+Copy: "We set everything up—tools, workflows, integrations—and train your team to use it. Plus, we're here with ongoing support to keep things running smoothly." in black.
+CTA Section:
+Text: "Ready to get started? Book your free consultation today." in black.
+Button: "Book Now" in royal blue with white text (embeds Calendly widget: https://calendly.com/yourcompany/consultation).
+5.2.5 Design Considerations:
+
+Visuals: Numbered icons or graphics in royal blue, inspired by Salesforce's clean feature highlights.
+Clear sectioning with headings in royal blue and body text in black, mirroring Notion's simplicity.
+Mobile-responsive, consistent design.
+5.2.6 Functionality/Interactions:
+
+Navigation: Functional links.
+CTA Button: Clickable, embeds Calendly widget.
+5.2.7 Metrics for Success:
+
+Bounce Rate: Low.
+Time on Page: Sufficient.
+CTA CTR: Track "Book Now" clicks.
+5.2.8 Technical Requirements:
+
+Mobile responsiveness.
+Fast load speed.
+5.3 Solutions
+5.3.1 Page Name: Solutions
+
+5.3.2 Purpose:
+
+Highlight AI solutions tailored to SMB pain points.
+Inspire visitors with practical use cases.
+5.3.3 Target Audience: SMB owners seeking specific solutions.
+
+5.3.4 Key Features/Sections:
+
+Header: Same as Home.
+Headline: "AI Solutions That Solve Your Biggest Problems" in black.
+Intro: "We partner with a vast network of AI innovators to bring you hundreds of cutting-edge tools tailored to your business needs. Here's how we can help your business thrive:" in black.
+Solution 1:
+Title: "Smarter Meetings" in royal blue.
+Copy: "Cut meeting prep and follow-up time with AI that takes notes, schedules, and summarizes—keeping you focused on the big picture." in black.
+Solution 2:
+Title: "Effortless Email" in royal blue.
+Copy: "Let AI draft replies, prioritize your inbox, and keep you on top of communication—no more email overload." in black.
+Solution 3:
+Title: "24/7 Customer Support" in royal blue.
+Copy: "Answer customer questions anytime with AI chatbots that feel human, without hiring extra staff." in black.
+Solution 4:
+Title: "Task Automation" in royal blue.
+Copy: "Free your team from repetitive work—AI can handle inventory, data entry, and more, so you can grow without burnout." in black.
+Outro: "With access to a diverse range of AI solutions, we'll craft the perfect combination for your unique challenges and goals." in black.
+CTA Section:
+Text: "See what's possible—book a free consultation." in black.
+Button: "Book Now" in royal blue with white text (embeds Calendly widget: https://calendly.com/yourcompany/consultation).
+Design Note: Add subtle graphic (e.g., "Powered by 100+ AI Innovators") in royal blue.
+5.3.5 Design Considerations:
+
+Icons: Royal blue icons for each solution (e.g., calendar, email), inspired by Salesforce's feature cards.
+Consistent grid layout per solution with royal blue titles and black text, adapted from Salesforce's clean structure.
+Mobile-responsive design.
+5.3.6 Functionality/Interactions:
+
+Navigation: Functional links.
+CTA Button: Clickable, embeds Calendly widget.
+5.3.7 Metrics for Success:
+
+Bounce Rate: Low.
+Time on Page: Sufficient.
+CTA CTR: Track "Book Now" clicks.
+5.3.8 Technical Requirements:
+
+Mobile responsiveness.
+Fast load speed.
+5.4 Why Us
+5.4.1 Page Name: Why Us
+
+5.4.2 Purpose:
+
+Differentiate [Your Company Name] from competitors.
+Emphasize unique benefits and credibility.
+5.4.3 Target Audience: SMB owners comparing AI providers.
+
+5.4.4 Key Features/Sections:
+
+Header: Same as Home.
+Headline: "Why Choose [Your Company Name] for AI?" in black.
+Intro: "AI doesn't have to be hard. Here's why we're the partner your business needs:" in black.
+Reason 1:
+Title: "We Do the Work For You" in royal blue.
+Copy: "Forget hunting for tools or figuring out setups. We handle everything—finding the right AI, integrating it, and making sure it works perfectly for your business." in black.
+Reason 2:
+Title: "Dead Simple to Use" in royal blue.
+Copy: "No tech skills? No problem. Our team sets up user-friendly solutions and trains you, so you're up and running fast." in black.
+Reason 3:
+Title: "Free Consultation, Real Results" in royal blue.
+Copy: "Start with a no-cost, no-strings call. We'll show you exactly how AI can save time, cut costs, and grow your business—tailored to you." in black.
+Reason 4:
+Title: "Affordable and Flexible" in royal blue.
+Copy: "Pay only for what you need. Our pricing fits your budget and scales with your business, powered by the best AI tools out there." in black.
+What Our Clients Say:
+Title: "What Our Clients Say" in black.
+Testimonial 1:
+Quote: "'[Your Company Name] saved us 10 hours a week on admin tasks. It's simple and affordable—exactly what we needed.'" in black.
+Attribution: - Lisa K., Founder, Peak Performance Services (Denver, CO) in dark gray.
+Testimonial 2:
+Quote: "'The consultation showed us AI we'd never have found on our own. Setup was a breeze, and sales are up 15%.'" in black.
+Attribution: - James P., Owner, Riverfront Manufacturing (Portland, OR) in dark gray.
+Testimonial 3:
+Quote: "'I was skeptical about AI, but the team made it so easy. Now, our customer service runs 24/7, and clients love it.'" in black.
+Attribution: - David L., Manager, TechFix Solutions (Boston, MA) in dark gray.
+Outro: "We're here to make AI work for you—not the other way around." in black.
+CTA Section:
+Text: "Book your free consultation and see the difference." in black.
+Button: "Book Now" in royal blue with white text (embeds Calendly widget: https://calendly.com/yourcompany/consultation).
+5.4.5 Design Considerations:
+
+Icons: Royal blue icons for each reason (e.g., hand, lightbulb), inspired by Salesforce's benefit highlights.
+Testimonials: Clean layout with quote marks, subtle avatars in black and white, mirroring Notion's trust section.
+Mobile-responsive design.
+5.4.6 Functionality/Interactions:
+
+Navigation: Functional links.
+CTA Button: Clickable, embeds Calendly widget.
+5.4.7 Metrics for Success:
+
+Bounce Rate: Low.
+Time on Page: Sufficient.
+CTA CTR: Track "Book Now" clicks.
+5.4.8 Technical Requirements:
+
+Mobile responsiveness.
+Fast load speed.
+5.5 About
+5.5.1 Page Name: About
+
+5.5.2 Purpose:
+
+Humanize the company and connect with visitors.
+Share mission and vision.
+5.5.3 Target Audience: SMB owners seeking trust.
+
+5.5.4 Key Features/Sections:
+
+Header: Same as Home.
+Headline: "Meet the Team Making AI Simple for SMBs" in black.
+Intro: "At [Your Company Name], we're passionate about helping small businesses thrive with AI. Our mission? Take the complexity out of tech so you can focus on what you do best." in black.
+Our Story:
+Title: "Our Story" in royal blue.
+Copy: "We started because we saw too many SMBs missing out on AI—either because it's too confusing or too expensive. With years in business and tech, we've built a service that delivers real value without the hassle. And we're just getting started—soon, we'll offer a unified platform to make AI even simpler for businesses like yours." in black.
+Our Promise:
+Title: "Our Promise" in royal blue.
+Copy: "We're not just a vendor—we're your partner. From the first call to ongoing support, we're here to make sure AI boosts your business, not burdens it." in black.
+Team (Optional):
+Title: "Our Team" in royal blue.
+Copy: "Our team brings expertise in AI, business strategy, and customer success—ready to help you succeed." in black.
+Profiles: Photos in grayscale (to maintain black-and-white theme), names in black, brief bios in black.
+CTA Section:
+Text: "Ready to work with us? Book a free consultation today." in black.
+Button: "Book Now" in royal blue with white text (embeds Calendly widget: https://calendly.com/yourcompany/consultation).
+5.5.5 Design Considerations:
+
+Visuals: Friendly visuals in black and white, inspired by Notion's illustrative style.
+Team Photos (if used): Grayscale for consistency with the black-and-white theme.
+Mobile-responsive design.
+5.5.6 Functionality/Interactions:
+
+Navigation: Functional links.
+CTA Button: Clickable, embeds Calendly widget.
+5.5.7 Metrics for Success:
+
+Bounce Rate: Low.
+Time on Page: Sufficient.
+CTA CTR: Track "Book Now" clicks.
+5.5.8 Technical Requirements:
+
+Mobile responsiveness.
+Fast load speed.
+5.6 Pricing
+5.6.1 Page Name: Pricing
+
+5.6.2 Purpose:
+
+Explain the per-seat, per-tool pricing model.
+Show affordability and flexibility.
+Drive consultation bookings for custom quotes.
+5.6.3 Target Audience: SMB owners evaluating costs.
+
+5.6.4 Key Features/Sections:
+
+Header: Same as Home.
+Headline: "Pricing That Fits Your Business" in black.
+Intro: "We believe AI should work for every SMB, so our pricing is simple, flexible, and based on what you need. No hidden fees—just value." in black.
+How It Works (Pricing):
+Title: "How It Works" in royal blue.
+Copy: "After your free consultation, we'll design a custom plan with the AI tools that fit your business. You pay per user and per tool—only for what you use. We handle setup and support, so you get results without the headache." in black.
+Pricing Breakdown:
+Per Seat:
+Subtitle: "Per Seat" in royal blue.
+Copy: "$50/month per user—covers access, setup, and basic support for your team." in black.
+Per Tool:
+Subtitle: "Per Tool" in royal blue.
+Copy: "$25-$100/month per AI tool (average $50/tool)—scales with the number of tools you choose. Exact costs depend on the tools selected and will be provided during your consultation." in black.
+Example:
+Title: "Example" in royal blue.
+Copy: "A 5-person team using 3 tools might pay $400/month ($250 for seats + $150 for tools). Your exact cost will depend on the tools we select together." in black.
+What You Get:
+Title: "What You Get" in royal blue.
+Copy: "Full setup, custom workflows, ongoing support—all included. Plus, a free consultation to kick things off." in black.
+Optional Setup Fee:
+Title: "Optional Setup Fee" in royal blue.
+Copy: "For complex setups, a one-time fee of $500-$2,000 may apply, often waived for simpler implementations or annual commitments." in black.
+Outro: "Not sure what you need? Our free consultation will give you a clear, custom quote." in black.
+CTA Section:
+Text: "Book a free consultation to get your custom quote." in black.
+Button: "Book Now" in royal blue with white text (embeds Calendly widget: https://calendly.com/yourcompany/consultation).
+5.6.5 Design Considerations:
+
+Clear tables or cards with royal blue borders or backgrounds for emphasis, inspired by Salesforce's pricing layout.
+Black text for pricing details, royal blue for CTAs.
+Mobile-responsive design.
+5.6.6 Functionality/Interactions:
+
+Navigation: Functional links.
+CTA Button: Clickable, embeds Calendly widget.
+5.6.7 Metrics for Success:
+
+Bounce Rate: Low.
+Time on Page: Sufficient.
+CTA CTR: Track "Book Now" clicks.
+5.6.8 Technical Requirements:
+
+Mobile responsiveness.
+Fast load speed.
+6. Global Website Requirements
+Branding: Consistent use of black, white, and royal blue across all pages, inspired by Notion's simplicity and Salesforce's effective accents.
+Quality Standard: All UI components must be executed at a professional level comparable to established enterprise SaaS companies, not at MVP quality.
+Component Consistency: Custom components should have a cohesive design system with consistent padding, border-radius, shadows, and interaction states.
+Animation: Subtle, purposeful animations for interactions (e.g., button hover, form focus, page transitions) that enhance usability without being distracting.
+Micro-interactions: Refined feedback for user actions (form submissions, button clicks) with appropriate visual and motion feedback.
+Mobile Responsiveness: Fully functional on all devices with polished, device-specific optimizations.
+Accessibility: WCAG 2.1 compliance (contrast, alt text, keyboard navigation).
+Performance: Fast load times (optimize images, asynchronous scripts).
+Security: HTTPS (SSL certificate).
+Analytics: Google Analytics for tracking metrics.
+SEO: Unique titles, meta descriptions, headers (e.g., "AI Solutions for Small Businesses | [Your Company Name]").
+Contact: Email or phone in footer (e.g., info@yourcompany.com) in royal blue.
+Footer:
+Copyright: "© 2023 [Your Company Name]. All rights reserved." in dark gray.
+Links: Privacy Policy, Terms of Service in royal blue.
+Optional: Social media icons in royal blue or secondary CTA (e.g., "Still have questions? Contact us." in royal blue).
+Legal: Consent checkbox for Privacy Policy/Terms on forms (GDPR/CCPA compliance).
+Calendly: Embed widget on all CTAs/forms with mock URL: https://calendly.com/yourcompany/consultation (replace later).
+Navigation: Sticky header, highlight active page in royal blue, inspired by Salesforce's intuitive navigation.
