@@ -11,18 +11,18 @@ const TrustElements = () => {
   ];
 
   return (
-    <div className="mt-10">
-      <h3 className="text-2xl font-bold text-center text-black mb-6">
+    <div className="mt-14">
+      <h3 className="text-3xl font-bold text-center text-gray-900 mb-6">
         Backed by a Network of 100+ AI Solutions
       </h3>
-      <p className="text-center text-black mb-8 max-w-3xl mx-auto">
+      <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto text-lg">
         We aggregate the best AI tools across every category so you don't have to navigate the complex landscape alone.
       </p>
-      <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
+      <div className="flex flex-wrap justify-center items-center gap-8 mb-10">
         {partnerLogos.map((partner, index) => (
           <div 
             key={index} 
-            className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-lightGray transition-all hover:shadow-md"
+            className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-gray-200 transition-all hover:shadow-md"
           >
             <div className="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-3">
               <svg 
@@ -40,14 +40,14 @@ const TrustElements = () => {
                 />
               </svg>
             </div>
-            <span className="text-sm font-medium text-black">{partner.name}</span>
+            <span className="text-sm font-medium text-gray-800">{partner.name}</span>
           </div>
         ))}
       </div>
       <div className="text-center">
-        <p className="inline-block text-sm font-medium py-2 px-4 bg-primary bg-opacity-10 text-primary rounded-full">
+        <span className="inline-block text-sm font-medium py-2 px-4 bg-primary bg-opacity-10 text-primary rounded-full">
           One Platform, Endless AI Possibilities
-        </p>
+        </span>
       </div>
     </div>
   );

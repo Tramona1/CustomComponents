@@ -60,13 +60,13 @@ const BusinessChallenges = () => {
   };
 
   return (
-    <div className="bg-white py-16 border-y border-lightGray">
+    <div className="bg-white py-16 border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
             What's Your Biggest Business Challenge?
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Select your biggest pain point and see how we can transform it with AI
           </p>
         </div>
@@ -76,20 +76,20 @@ const BusinessChallenges = () => {
             <button
               key={challenge.id}
               onClick={() => handleSelectChallenge(challenge.id)}
-              className={`p-6 rounded-xl border transition-all ${
+              className={`p-5 rounded-xl border transition-all ${
                 selectedChallenge === challenge.id
-                  ? 'border-primary bg-primary bg-opacity-5 shadow-md'
-                  : 'border-lightGray hover:border-primary hover:shadow-sm'
+                  ? 'border-primary bg-primary bg-opacity-5 shadow-sm'
+                  : 'border-gray-200 hover:border-primary hover:shadow-sm'
               }`}
             >
               <div className="flex flex-col items-center text-center">
-                <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 ${
                   selectedChallenge === challenge.id
                     ? 'bg-primary text-white'
                     : 'bg-primary bg-opacity-10 text-primary'
                 }`}>
                   <svg 
-                    className="w-8 h-8" 
+                    className="w-6 h-6" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24" 
@@ -103,10 +103,10 @@ const BusinessChallenges = () => {
                     />
                   </svg>
                 </div>
-                <h3 className={`font-bold ${
+                <h3 className={`font-semibold text-sm ${
                   selectedChallenge === challenge.id
                     ? 'text-primary'
-                    : 'text-black'
+                    : 'text-gray-800'
                 }`}>
                   {challenge.title}
                 </h3>
@@ -116,11 +116,11 @@ const BusinessChallenges = () => {
         </div>
 
         {selectedChallenge && (
-          <div className="bg-white border border-primary rounded-xl p-8 max-w-3xl mx-auto transition-all shadow-md">
-            <div className="flex flex-col md:flex-row items-start gap-6">
-              <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
+          <div className="bg-white border border-primary rounded-xl p-6 max-w-3xl mx-auto transition-all shadow-sm">
+            <div className="flex flex-col md:flex-row items-start gap-5">
+              <div className="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
                 <svg 
-                  className="w-8 h-8" 
+                  className="w-7 h-7" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24" 
@@ -135,19 +135,26 @@ const BusinessChallenges = () => {
                 </svg>
               </div>
               <div>
-                <div className="mb-2">
-                  <span className="inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">
+                <div className="mb-3">
+                  <span className="inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary text-xs font-medium rounded-full">
                     {getSelectedChallenge()?.solution}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-2">{getSelectedChallenge()?.title}</h3>
-                <p className="text-black mb-6">{getSelectedChallenge()?.description}</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="https://calendly.com/yourcompany/consultation" target="_blank" className="btn btn-primary">
-                    Get Your Custom Solution
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{getSelectedChallenge()?.title}</h3>
+                <p className="text-gray-600 mb-5">{getSelectedChallenge()?.description}</p>
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                  <Link 
+                    href="https://calendly.com/singletonsgroup/consultation" 
+                    target="_blank" 
+                    className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
+                  >
+                    Get a custom solution
                   </Link>
-                  <Link href="/solutions" className="btn btn-secondary">
-                    See All Solutions
+                  <Link 
+                    href="/solutions" 
+                    className="inline-flex items-center justify-center px-6 py-2.5 border border-gray-200 text-base font-medium rounded-full text-gray-700 hover:bg-gray-50 transition-all"
+                  >
+                    See all solutions
                   </Link>
                 </div>
               </div>
@@ -156,21 +163,27 @@ const BusinessChallenges = () => {
         )}
 
         {!selectedChallenge && (
-          <div className="bg-primary bg-opacity-5 border border-primary border-opacity-20 rounded-xl p-8 max-w-3xl mx-auto">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 max-w-3xl mx-auto">
             <div className="text-center">
-              <h3 className="text-xl font-bold text-black mb-3">Select any challenge above to see how AI can help</h3>
-              <p className="text-black mb-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Select any challenge above to see how AI can help</h3>
+              <p className="text-gray-600 mb-6">
                 Or if you don't see your specific challenge, we can create a custom AI solution for your unique business needs.
               </p>
-              <Link href="https://calendly.com/yourcompany/consultation" target="_blank" className="btn btn-primary">
-                Book Your Free Consultation
-              </Link>
+              <div className="text-center">
+                <Link 
+                  href="https://calendly.com/singletonsgroup/consultation" 
+                  target="_blank" 
+                  className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
+                >
+                  Discuss your specific needs
+                </Link>
+              </div>
             </div>
           </div>
         )}
 
-        <div className="mt-12 text-center">
-          <p className="text-sm text-darkGray">
+        <div className="mt-8 text-center">
+          <p className="text-sm text-gray-500">
             We've helped businesses solve these challenges and more. <br />
             <span className="font-medium">No problem is too big or too small for our AI solutions.</span>
           </p>
