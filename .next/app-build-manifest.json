@@ -11,6 +11,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/success-stories/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/success-stories/page.js"
+    ],
+    "/how-it-works/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/how-it-works/page.js"
+    ],
     "/solutions/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,15 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/all-solutions/page.js"
     ],
-    "/why-need-ai/page": [
+    "/why-choose-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/why-need-ai/page.js"
-    ],
-    "/why-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/why-us/page.js"
+      "static/chunks/app/why-choose-us/page.js"
     ],
     "/about/page": [
       "static/chunks/webpack.js",

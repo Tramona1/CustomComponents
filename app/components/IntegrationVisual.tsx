@@ -100,14 +100,7 @@ const IntegrationVisual = () => {
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6">We integrate with 100+ tools across all major business categories</p>
-          <Link 
-            href="https://calendly.com/singletonsgroup/consultation"
-            target="_blank"
-            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
-          >
-            Check if We Support Your Tools
-          </Link>
+          <p className="text-gray-600">We integrate with 100+ tools across all major business categories</p>
         </div>
       </div>
     </div>

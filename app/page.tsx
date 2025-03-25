@@ -12,6 +12,7 @@ import SolutionGrid from './components/SolutionGrid';
 import BusinessChallenges from './components/BusinessChallenges';
 import AIVisualization from './components/AIVisualization';
 import WinningWithAI from './components/WinningWithAI';
+import LogoCarousel from './components/LogoCarousel';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,7 +72,7 @@ export default function Home() {
               Looking for an AI Solution? We Make It Simple.
               </h1>
               <p className="text-lg md:text-xl text-text-sub mb-8 leading-relaxed">
-              AI should be easy and helpful, not confusing. We team up with you, to decide which of the 1000+ AI tools best fit your needs. We implement them and make sure they work seamlessly with your business. </p>
+              AI should be straightforward and effective, not overwhelming. We partner with you to understand your unique challenges and select the best tools from our network of over 1,000 AI solutions—tailored to fit your business perfectly. </p>
               <div className="flex flex-col sm:flex-row gap-5">
                 <Link 
                   href="https://calendly.com/singletonsgroup/consultation" 
@@ -110,41 +111,19 @@ export default function Home() {
       <section className="py-12 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-8">
-            Join the hundreds of businesses working with SingletonsGroup to effortlessly add AI, to start enhancing their business
+            AI Is Confusing—We Understand. We're Here to Make It Simple.
           </h2>
           
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-10">
-            {/* Company logos - using svg placeholders */}
-            <div className="h-8 text-gray-400">
-              <svg className="h-full" viewBox="0 0 100 28" fill="currentColor">
-                <path d="M10 22c5.523 0 10-4.477 10-10S15.523 2 10 2 0 6.477 0 12s4.477 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8zM30 22h60v-4H30v4zm0-12h60V6H30v4zm0 6h40v-4H30v4z" />
-              </svg>
-            </div>
-            <div className="h-8 text-gray-400">
-              <svg className="h-full" viewBox="0 0 100 28" fill="currentColor">
-                <path d="M30 12c0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12-12-5.373-12-12zm12 8c4.411 0 8-3.589 8-8s-3.589-8-8-8-8 3.589-8 8 3.589 8 8 8zM70 7.757l4.243 4.243L62 24.243 49.757 12 54 7.757 62 15.757 70 7.757z" />
-              </svg>
-            </div>
-            <div className="h-8 text-gray-400">
-              <svg className="h-full" viewBox="0 0 100 28" fill="currentColor">
-                <path d="M0 4h20v20H0V4zm40 0h60v8H40V4zm0 12h60v8H40v-8z" />
-              </svg>
-            </div>
-            <div className="h-8 text-gray-400">
-              <svg className="h-full" viewBox="0 0 100 28" fill="currentColor">
-                <path d="M50 4c13.255 0 24 10.745 24 24S63.255 52 50 52 26 41.255 26 28 36.745 4 50 4zm0 40c8.837 0 16-7.163 16-16S58.837 12 50 12 34 19.163 34 28s7.163 16 16 16z" />
-              </svg>
-            </div>
-            <div className="h-8 text-gray-400">
-              <svg className="h-full" viewBox="0 0 100 28" fill="currentColor">
-                <path d="M10 14L0 24l10 10 10-10-10-10zm15-10L15 14l10 10 10-10-10-10zm35 0L50 14l10 10 10-10-10-10z" />
-              </svg>
-            </div>
-          </div>
+          <p className="text-lg text-text-sub mb-10 max-w-3xl mx-auto">
+            Every business should be using AI to grow, but with thousands of tools and complex jargon out there, it's easy to feel overwhelmed. That's why businesses trust us to cut through the noise and deliver AI solutions that work for them.
+          </p>
+          
+          {/* Using our new LogoCarousel component */}
+          <LogoCarousel />
           
           <div className="mt-10 max-w-2xl mx-auto">
             <p className="text-lg text-text-sub mb-6">
-              "They made AI so simple. I always knew AI could help my buiness, but there were so many options and AI is so confusing. They did all the heavy lifting and now I can focus on growing my business."
+              "They made AI so simple. I always knew AI could help my business, but there were so many options and AI is so confusing. They did all the heavy lifting and now I can focus on growing my business."
             </p>
             <p className="text-sm text-text-sub">
               — Sarah T., Small Business Owner
@@ -152,8 +131,8 @@ export default function Home() {
           </div>
           
           <div className="mt-8">
-            <Link href="/testimonials" className="inline-flex items-center text-text-accent font-medium hover:underline">
-              See Customer Success Stories
+            <Link href="/success-stories" className="inline-flex items-center text-text-accent font-medium hover:underline">
+              See More Customer Success Stories
               <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
@@ -413,6 +392,8 @@ export default function Home() {
               <ul className="space-y-3">
                 <li><Link href="/about" className="text-text-sub hover:text-text-accent">About</Link></li>
                 <li><Link href="/how-it-works" className="text-text-sub hover:text-text-accent">How It Works</Link></li>
+                <li><Link href="/why-choose-us" className="text-text-sub hover:text-text-accent">Why Choose Us</Link></li>
+                <li><Link href="/success-stories" className="text-text-sub hover:text-text-accent">Success Stories</Link></li>
                 <li><Link href="/case-studies" className="text-text-sub hover:text-text-accent">Case Studies</Link></li>
                 <li><Link href="/pricing" className="text-text-sub hover:text-text-accent">Pricing</Link></li>
                 <li><Link href="/blog" className="text-text-sub hover:text-text-accent">Blog</Link></li>

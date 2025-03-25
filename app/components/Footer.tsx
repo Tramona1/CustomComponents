@@ -37,8 +37,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/why-us" className="text-darkGray hover:text-primary">
-                  Why Us
+                <Link href="/why-choose-us" className="text-darkGray hover:text-primary">
+                  Why Choose Us
                 </Link>
               </li>
               <li>

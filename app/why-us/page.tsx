@@ -150,7 +150,7 @@ export default function WhyUs() {
               The <span className="text-primary">AI Strategic Partner</span> Difference
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're not just another AI vendor. We're your guide through the complex AI landscape, focused on real business results.
+              We're not just another AI company. We're the only company that sources, negotiates and works directly with you to fufill all your buiesnns needs
             </p>
           </div>
 

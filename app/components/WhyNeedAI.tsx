@@ -112,7 +112,7 @@ const WhyNeedAI = () => {
         <div className="max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold text-text-main mb-4">The Problem with Today's AI Landscape</h3>
           <p className="text-text-sub mb-6">
-            There are over 7,000 AI companies today, each claiming their solution is perfect for everyone. The truth? Most business owners waste money on the wrong AI tools because:
+            Ai is new, and complicated. There are also over 7,000 AI companies today, each claiming their solution is the best. The truth? Most business owners waste money on the wrong AI tools because:
           </p>
           
           <ul className="space-y-4 mb-8">

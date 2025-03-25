@@ -16,10 +16,10 @@ export default function AllSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-6">
-              Complete AI Solutions Catalog
+              AI Solutions Catalog
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Browse our full catalog of AI solutions designed for businesses of all sizes. Filter by category to find the perfect tool for your needs.
+              Browse our catalog of AI solutions designed for businesses of all sizes. Filter by category to find the perfect tool for your needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link

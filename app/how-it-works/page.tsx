@@ -57,8 +57,7 @@ export default function HowItWorks() {
               How We Make AI Simple for Your Business
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Our straightforward three-step process takes the complexity out of AI implementation, 
-              so you can focus on what you do best—running your business.
+              We take the complexity out of AI, so you only see the benefits.
             </p>
             <Link
               href="https://calendly.com/singletonsgroup/consultation"
@@ -75,17 +74,14 @@ export default function HowItWorks() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Simple Three-Step Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We've designed a straightforward approach that makes AI accessible to any business, regardless of your technical expertise.
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Simple Four-Step Process</h2>
           </div>
 
           <div className="relative">
             {/* Timeline Line */}
             <div className="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gray-200 z-0"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Step 1 */}
               <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -165,10 +161,10 @@ export default function HowItWorks() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
-                  3. Full Setup & Support
+                  3. Full Setup & Integration
                 </h3>
                 <p className="text-gray-600 text-center mb-4">
-                  We handle all technical setup and provide ongoing support—no stress, just results.
+                  We handle all technical setup and integrate seamlessly with your existing systems.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
@@ -187,7 +183,42 @@ export default function HowItWorks() {
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Ongoing optimization and support</span>
+                    <span>Seamless integration with existing tools</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Step 4 - NEW */}
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
+                  4. Ongoing Support & Growth
+                </h3>
+                <p className="text-gray-600 text-center mb-4">
+                  We provide continuous support and optimization to maximize your business results.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Regular performance monitoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Continuous optimization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Business impact tracking</span>
                   </li>
                 </ul>
               </div>
@@ -196,11 +227,10 @@ export default function HowItWorks() {
 
           <div className="text-center mt-12">
             <Link
-              href="https://calendly.com/singletonsgroup/consultation"
-              target="_blank"
+              href="/solutions"
               className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
             >
-              Get Started with a Free Call
+              See Popular Solutions
             </Link>
           </div>
         </div>

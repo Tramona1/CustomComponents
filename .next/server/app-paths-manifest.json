@@ -1,9 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/solutions/page": "app/solutions/page.js",
-  "/all-solutions/page": "app/all-solutions/page.js",
-  "/why-need-ai/page": "app/why-need-ai/page.js",
-  "/why-us/page": "app/why-us/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/why-choose-us/page": "app/why-choose-us/page.js",
   "/about/page": "app/about/page.js",
-  "/pricing/page": "app/pricing/page.js"
+  "/solutions/page": "app/solutions/page.js",
+  "/all-solutions/page": "app/all-solutions/page.js"
 }
