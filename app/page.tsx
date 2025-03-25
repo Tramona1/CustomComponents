@@ -149,10 +149,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-              AI should be easy and helpful, not difficult and confusing
+              Unlock the Power of AI in your business
             </h2>
             <p className="text-xl text-text-sub max-w-3xl mx-auto">
-              Some of the uses cases we help can help with:
+              AI should be a game-changer for your business, not a source of confusion. Here's a few real challenges business owners face every day AI can solve
             </p>
           </div>
           
@@ -162,51 +162,75 @@ export default function Home() {
             {[
               {
                 id: 'automation',
-                title: 'AI Automation',
-                description: 'Say goodbye to repetitive tasks. We\'ll find or create AI tools to handle scheduling, data entry, and more.',
+                title: 'Automate Routine Tasks',
+                description: 'Struggling with time-consuming tasks like scheduling or data entry? AI can automate these processes, freeing you to focus on growing your business.',
                 icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
                 highlight: 'Time Saver',
-                highlightColor: 'bg-green-100 text-green-800'
+                highlightColor: 'bg-green-100 text-green-800',
+                complexity: 'Moderate',
+                complexityColor: 'bg-yellow-100 text-yellow-800',
+                cost: 'Moderate Cost',
+                costColor: 'bg-yellow-100 text-yellow-800'
               },
               {
                 id: 'customer-support',
-                title: 'Customer Support',
-                description: 'Deliver instant, 24/7 support with AI chatbots we select and set up to match your brand.',
+                title: 'Enhance Customer Support',
+                description: 'Can\'t keep up with customer inquiries? AI chatbots provide instant, 24/7 responses, ensuring your customers are always supported.',
                 icon: 'M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z',
                 highlight: 'Best Seller',
-                highlightColor: 'bg-purple-100 text-purple-800'
+                highlightColor: 'bg-purple-100 text-purple-800',
+                complexity: 'Simple',
+                complexityColor: 'bg-blue-100 text-blue-800',
+                cost: 'Moderate Cost',
+                costColor: 'bg-yellow-100 text-yellow-800'
               },
               {
                 id: 'sales',
-                title: 'Sales Boosters',
-                description: 'Close more deals with AI that scores leads and personalizes outreach—picked just for your process.',
+                title: 'Boost Sales Conversions',
+                description: 'Finding it hard to identify high-potential leads? AI can score leads and personalize outreach, helping you close more deals faster.',
                 icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
                 highlight: 'Revenue Driver',
-                highlightColor: 'bg-blue-100 text-blue-800'
+                highlightColor: 'bg-blue-100 text-blue-800',
+                complexity: 'Moderate',
+                complexityColor: 'bg-yellow-100 text-yellow-800',
+                cost: 'Expensive',
+                costColor: 'bg-red-100 text-red-800'
               },
               {
                 id: 'data-analysis',
-                title: 'Data Analysis',
-                description: 'Turn your business data into actionable insights with AI tools that identify patterns and opportunities.',
+                title: 'Uncover Data Insights',
+                description: 'Overwhelmed by business data? AI analyzes your data to reveal trends and opportunities, empowering smarter decisions.',
                 icon: 'M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
                 highlight: 'Strategic',
-                highlightColor: 'bg-amber-100 text-amber-800'
+                highlightColor: 'bg-amber-100 text-amber-800',
+                complexity: 'Complex',
+                complexityColor: 'bg-orange-100 text-orange-800',
+                cost: 'Moderate Cost',
+                costColor: 'bg-yellow-100 text-yellow-800'
               },
               {
                 id: 'content',
-                title: 'Content Creation',
-                description: 'Generate high-quality marketing content, product descriptions, and more with AI trained on your brand voice.',
+                title: 'Streamline Content Creation',
+                description: 'Struggling to create marketing content fast enough? AI generates blog posts, social media content, and more, matching your brand voice.',
                 icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
                 highlight: 'Time Saver',
-                highlightColor: 'bg-green-100 text-green-800'
+                highlightColor: 'bg-green-100 text-green-800',
+                complexity: 'Simple',
+                complexityColor: 'bg-blue-100 text-blue-800',
+                cost: 'Moderate Cost',
+                costColor: 'bg-yellow-100 text-yellow-800'
               },
               {
                 id: 'custom',
-                title: 'Custom Solutions',
-                description: 'Don\'t see what you need? We\'ll build custom AI solutions tailored to your specific business requirements.',
+                title: 'Solve Unique Challenges',
+                description: 'Facing a challenge that\'s one-of-a-kind? We\'ll design a custom AI solution to tackle your specific business problem.',
                 icon: 'M12 6v-2m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6v-4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6v-4',
                 highlight: 'Tailored',
-                highlightColor: 'bg-indigo-100 text-indigo-800'
+                highlightColor: 'bg-indigo-100 text-indigo-800',
+                complexity: 'Complex',
+                complexityColor: 'bg-orange-100 text-orange-800',
+                cost: 'Expensive',
+                costColor: 'bg-red-100 text-red-800'
               }
             ].map((solution) => (
               <div 
@@ -226,48 +250,16 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className={`inline-block px-3 py-1 ${solution.highlightColor} text-xs font-medium rounded-full mb-2`}>
-                      {solution.highlight}
-                    </span>
-                    
-                    {/* Adding complexity and cost badges */}
                     <div className="flex flex-wrap gap-2 mb-2">
-                      {solution.id === 'automation' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">Complex</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Expensive</span>
-                        </>
-                      )}
-                      {solution.id === 'customer-support' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate Cost</span>
-                        </>
-                      )}
-                      {solution.id === 'sales' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Expensive</span>
-                        </>
-                      )}
-                      {solution.id === 'data-analysis' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">Complex</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate Cost</span>
-                        </>
-                      )}
-                      {solution.id === 'content' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Simple</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate Cost</span>
-                        </>
-                      )}
-                      {solution.id === 'custom' && (
-                        <>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">Complex</span>
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Expensive</span>
-                        </>
-                      )}
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.highlightColor}`}>
+                        {solution.highlight}
+                      </span>
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.complexityColor}`}>
+                        {solution.complexity}
+                      </span>
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.costColor}`}>
+                        {solution.cost}
+                      </span>
                     </div>
                     
                     <h3 className="text-xl font-bold text-text-main mb-1">{solution.title}</h3>
@@ -294,11 +286,10 @@ export default function Home() {
             </p>
             
             <Link 
-              href="#solutions-section"
+              href="/solutions"
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
-              onClick={scrollToSolutions}
             >
-              See Our Solutions
+              Discover More on Our Solutions Page
             </Link>
           </div>
         </div>

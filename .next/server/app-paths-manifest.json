@@ -1,7 +1,7 @@
 {
-  "/partners/page": "app/partners/page.js",
   "/page": "app/page.js",
   "/why-choose-us/page": "app/why-choose-us/page.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/how-it-works/page": "app/how-it-works/page.js"
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/partners/page": "app/partners/page.js",
+  "/pricing/page": "app/pricing/page.js"
 }
