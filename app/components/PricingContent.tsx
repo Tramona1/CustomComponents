@@ -328,7 +328,7 @@ export default function PricingContent() {
                         
                         <button
                           type="submit"
-                          className="w-full bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-primary-dark transition-colors"
+                          className="w-full bg-primary text-white py-3.5 px-8 rounded-full font-medium hover:bg-primary-dark transition-colors"
                         >
                           Request Your Custom Quote
                         </button>
@@ -431,37 +431,39 @@ export default function PricingContent() {
                     Most Popular Choice
                   </div>
                 )}
-                <div className="p-8 h-full flex flex-col">
-                  <h3 className="text-2xl font-bold text-text-main mb-2">{plan.name}</h3>
-                  <div className="border-b border-gray-100 pb-4 mb-4">
-                    <p className="text-md text-text-sub font-medium">Custom pricing based on your specific requirements and selected AI solutions</p>
-                  </div>
-                  <p className="text-text-sub mb-6">{plan.description}</p>
-                  
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, index) => (
-                      <li key={index} className="flex items-start">
-                        <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-text-sub">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <div className="mb-8 p-4 bg-blue-50 rounded-lg">
-                    <p className="text-sm font-medium text-primary mb-2">EXAMPLE:</p>
-                    <div className="text-sm text-text-sub">
-                      {plan.example}
+                <div className="p-8 flex flex-col" style={{ height: '750px' }}>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-text-main mb-2">{plan.name}</h3>
+                    <div className="border-b border-gray-100 pb-4 mb-4">
+                      <p className="text-md text-text-sub font-medium">Custom pricing based on your specific requirements and selected AI solutions</p>
+                    </div>
+                    <p className="text-text-sub mb-6">{plan.description}</p>
+                    
+                    <ul className="space-y-3 mb-8">
+                      {plan.features.map((feature, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-text-sub">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <div className="p-4 bg-blue-50 rounded-lg">
+                      <p className="text-sm font-medium text-primary mb-2">EXAMPLE:</p>
+                      <div className="text-sm text-text-sub">
+                        {plan.example}
+                      </div>
                     </div>
                   </div>
                   
-                  <div className="mt-auto">
+                  <div className="mt-8">
                     <a
                       href={plan.ctaLink}
-                      className={`w-full block text-center py-3 px-6 rounded-lg font-medium transition-all ${
+                      className={`w-full block text-center py-3.5 px-6 rounded-full font-medium transition-all ${
                         plan.id === 'enterprise'
-                          ? 'bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white'
+                          ? 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
                           : 'bg-primary text-white hover:bg-primary-dark'
                       }`}
                     >
@@ -509,7 +511,7 @@ export default function PricingContent() {
                 </ul>
                 <a
                   href="#quote-form"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium bg-primary text-white hover:bg-primary-dark transition-all"
+                  className="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-medium bg-primary text-white hover:bg-primary-dark transition-all"
                 >
                   Get Your Custom Quote
                 </a>
@@ -648,7 +650,7 @@ export default function PricingContent() {
             </p>
             <a
               href="#quote-form"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium bg-primary text-white hover:bg-primary-dark transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-medium bg-primary text-white hover:bg-primary-dark transition-all"
             >
               Request Your Custom Quote
             </a>

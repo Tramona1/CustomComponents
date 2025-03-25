@@ -55,16 +55,16 @@ const Header = () => {
             <nav className="hidden md:flex space-x-8">
               <Link 
                 href="/how-it-works" 
-                className={`text-base font-medium transition-colors ${isActive('/how-it-works') ? 'text-text-accent' : 'text-text-sub hover:text-text-accent'}`}
+                className={`text-[15px] font-semibold transition-colors ${isActive('/how-it-works') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               >
                 How It Works
               </Link>
               <div className="relative group">
                 <button 
-                  className={`text-base font-medium transition-colors inline-flex items-center ${
+                  className={`text-[15px] font-semibold transition-colors inline-flex items-center ${
                     isActive('/solutions') || isActive('/all-solutions') 
-                      ? 'text-text-accent' 
-                      : 'text-text-sub hover:text-text-accent'
+                      ? 'text-[#1F2937]' 
+                      : 'text-[#1F2937] hover:text-text-accent'
                   }`}
                   onClick={toggleSolutions}
                   onMouseEnter={() => setIsSolutionsOpen(true)}
@@ -86,13 +86,13 @@ const Header = () => {
                 >
                   <Link
                     href="/solutions"
-                    className="block px-4 py-2 text-sm text-text-sub hover:bg-gray-100 hover:text-text-accent"
+                    className="block px-4 py-2 text-[15px] text-[#1F2937] hover:bg-gray-100 hover:text-text-accent"
                   >
                     Popular Solutions
                   </Link>
                   <Link
                     href="/all-solutions"
-                    className="block px-4 py-2 text-sm text-text-sub hover:bg-gray-100 hover:text-text-accent"
+                    className="block px-4 py-2 text-[15px] text-[#1F2937] hover:bg-gray-100 hover:text-text-accent"
                   >
                     All Solutions Catalog
                   </Link>
@@ -100,26 +100,36 @@ const Header = () => {
               </div>
               <Link 
                 href="/why-choose-us" 
-                className={`text-base font-medium transition-colors ${isActive('/why-choose-us') ? 'text-text-accent' : 'text-text-sub hover:text-text-accent'}`}
+                className={`text-[15px] font-semibold transition-colors ${isActive('/why-choose-us') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               >
                 Why Choose Us
               </Link>
               <Link 
                 href="/about" 
-                className={`text-base font-medium transition-colors ${isActive('/about') ? 'text-text-accent' : 'text-text-sub hover:text-text-accent'}`}
+                className={`text-[15px] font-semibold transition-colors ${isActive('/about') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               >
                 About
               </Link>
               <Link 
                 href="/pricing" 
-                className={`text-base font-medium transition-colors ${isActive('/pricing') ? 'text-text-accent' : 'text-text-sub hover:text-text-accent'}`}
+                className={`text-[15px] font-semibold transition-colors ${isActive('/pricing') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               >
                 Pricing
               </Link>
             </nav>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">
+            {/* Partners link moved next to CTA */}
+            <div className="hidden md:block">
+              <Link 
+                href="/partners" 
+                className={`text-[15px] font-semibold transition-colors px-4 py-2 ${isActive('/partners') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
+              >
+                Partners
+              </Link>
+            </div>
+            
             {/* CTA Button (Desktop) - Now on far right */}
             <div className="hidden md:block">
               <Link 
@@ -160,7 +170,7 @@ const Header = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
             <Link
               href="/how-it-works"
-              className={`block px-3 py-2 rounded-md ${isActive('/how-it-works') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+              className={`block px-3 py-2 rounded-md text-[15px] font-semibold ${isActive('/how-it-works') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
@@ -169,10 +179,10 @@ const Header = () => {
             {/* Solutions with nested links for mobile */}
             <div>
               <button
-                className={`flex justify-between items-center w-full px-3 py-2 rounded-md ${
+                className={`flex justify-between items-center w-full px-3 py-2 rounded-md text-[15px] font-semibold ${
                   isActive('/solutions') || isActive('/all-solutions') 
-                    ? 'text-text-accent font-medium' 
-                    : 'text-text-sub hover:text-text-accent'
+                    ? 'text-[#1F2937]' 
+                    : 'text-[#1F2937] hover:text-text-accent'
                 }`}
                 onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
               >
@@ -193,14 +203,14 @@ const Header = () => {
                 <div className="pl-4 mt-1">
                   <Link
                     href="/solutions"
-                    className={`block px-3 py-2 rounded-md ${isActive('/solutions') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+                    className={`block px-3 py-2 rounded-md text-[15px] ${isActive('/solutions') ? 'text-[#1F2937] font-semibold' : 'text-[#1F2937] hover:text-text-accent'}`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Popular Solutions
                   </Link>
                   <Link
                     href="/all-solutions"
-                    className={`block px-3 py-2 rounded-md ${isActive('/all-solutions') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+                    className={`block px-3 py-2 rounded-md text-[15px] ${isActive('/all-solutions') ? 'text-[#1F2937] font-semibold' : 'text-[#1F2937] hover:text-text-accent'}`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     All Solutions Catalog
@@ -211,24 +221,31 @@ const Header = () => {
             
             <Link
               href="/why-choose-us"
-              className={`block px-3 py-2 rounded-md ${isActive('/why-choose-us') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+              className={`block px-3 py-2 rounded-md text-[15px] font-semibold ${isActive('/why-choose-us') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Why Choose Us
             </Link>
             <Link
               href="/about"
-              className={`block px-3 py-2 rounded-md ${isActive('/about') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+              className={`block px-3 py-2 rounded-md text-[15px] font-semibold ${isActive('/about') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/pricing"
-              className={`block px-3 py-2 rounded-md ${isActive('/pricing') ? 'text-text-accent font-medium' : 'text-text-sub hover:text-text-accent'}`}
+              className={`block px-3 py-2 rounded-md text-[15px] font-semibold ${isActive('/pricing') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              href="/partners"
+              className={`block px-3 py-2 rounded-md text-[15px] font-semibold ${isActive('/partners') ? 'text-[#1F2937]' : 'text-[#1F2937] hover:text-text-accent'}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Partners
             </Link>
             <Link
               href="https://calendly.com/singletonsgroup/consultation"

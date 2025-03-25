@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function HowItWorks() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -50,188 +51,188 @@ export default function HowItWorks() {
   return (
     <main className="flex flex-col min-h-screen bg-gray-50">      
       {/* Hero Section */}
-      <section className="bg-white pt-24 pb-16">
+      <section className="relative bg-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-6">
-              How We Make AI Simple for Your Business
+              Simplifying AI for Your Business
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              We take the complexity out of AI, so you only see the benefits.
+            <p className="text-xl font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-8">
+              Our straightforward process makes implementing AI tools easy, affordable, and stress-free—even if you have zero technical expertise.
             </p>
-            <Link
-              href="https://calendly.com/singletonsgroup/consultation"
+            <Link 
+              href="https://calendly.com/singletonsgroup/consultation" 
               target="_blank"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all font-['ui-sans-serif,system-ui,sans-serif']"
             >
-              Schedule a Free Discovery Call
+              Request a Custom Quote
             </Link>
           </div>
         </div>
       </section>
 
       {/* Visual Timeline Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Simple Four-Step Process</h2>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Our 4-Step Process</h2>
+            <p className="mt-4 text-xl font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] max-w-3xl mx-auto">
+              From discovery to implementation, we handle the entire AI transition for your business.
+            </p>
           </div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gray-200 z-0"></div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {/* Step 1 */}
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
+          
+          <div className="grid gap-12 mt-16">
+            {/* Step 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-4 lg:col-span-5">
+                <div className="relative">
+                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold absolute top-0 -left-6 z-10">1</div>
+                  <div className="rounded-xl overflow-hidden">
+                    <Image
+                      src="/images/discovery-call.jpg"
+                      alt="Free Discovery Call"
+                      width={550}
+                      height={360}
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
-                  1. Free Discovery Call
-                </h3>
-                <p className="text-gray-600 text-center mb-4">
-                  A 30-minute chat to understand your business and goals—no technical jargon, just solutions.
-                </p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Discuss your business challenges</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Identify potential AI solutions</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>No pressure, no commitment</span>
-                  </li>
-                </ul>
               </div>
-              
-              {/* Step 2 */}
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
-                  2. Custom AI Plan
-                </h3>
-                <p className="text-gray-600 text-center mb-4">
-                  We select the perfect AI tools from our network of 1000+ partners—no overwhelm for you.
+              <div className="md:col-span-8 lg:col-span-7">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Free Discovery Call</h3>
+                <p className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-4">
+                  We start with a 30-minute call to understand your business needs, challenges, and goals. No technical jargon—just a conversation about how we can help your business thrive.
                 </p>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2">
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Vendor-neutral recommendations</span>
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Discover potential AI use cases for your business</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Detailed implementation timeline</span>
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Learn about cost savings and efficiency gains</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Clear pricing with no surprises</span>
-                  </li>
-                </ul>
-              </div>
-              
-              {/* Step 3 */}
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
-                  3. Full Setup & Integration
-                </h3>
-                <p className="text-gray-600 text-center mb-4">
-                  We handle all technical setup and integrate seamlessly with your existing systems.
-                </p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Complete technical implementation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Team training and onboarding</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Seamless integration with existing tools</span>
-                  </li>
-                </ul>
-              </div>
-              
-              {/* Step 4 - NEW */}
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 relative z-10 transition-all hover:shadow-md hover:border-primary">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
-                  4. Ongoing Support & Growth
-                </h3>
-                <p className="text-gray-600 text-center mb-4">
-                  We provide continuous support and optimization to maximize your business results.
-                </p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Regular performance monitoring</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Continuous optimization</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Business impact tracking</span>
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Get answers to all your questions</span>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/solutions"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
-            >
-              See Popular Solutions
-            </Link>
+            
+            {/* Step 2 */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-8 lg:col-span-7 md:order-1 order-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Custom AI Plan</h3>
+                <p className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-4">
+                  Within 48 hours, we'll deliver a tailored AI implementation plan designed specifically for your business needs, complete with tools, timeline, and ROI projections.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Receive a custom AI solution blueprint</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Review transparent pricing with no hidden costs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">See projected ROI and implementation timeline</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="md:col-span-4 lg:col-span-5 md:order-2 order-1">
+                <div className="relative">
+                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold absolute top-0 -right-6 z-10">2</div>
+                  <div className="rounded-xl overflow-hidden">
+                    <Image
+                      src="/images/custom-plan.jpg"
+                      alt="Custom AI Plan"
+                      width={550}
+                      height={360}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Step 3 */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-4 lg:col-span-5">
+                <div className="relative">
+                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold absolute top-0 -left-6 z-10">3</div>
+                  <div className="rounded-xl overflow-hidden">
+                    <Image
+                      src="/images/full-setup.jpg"
+                      alt="Full Setup & Integration"
+                      width={550}
+                      height={360}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-8 lg:col-span-7">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Full Setup & Integration</h3>
+                <p className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-4">
+                  We handle all technical setup and integrate seamlessly with your existing systems.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Complete technical implementation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Team training and onboarding</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Seamless integration with existing tools</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Step 4 - NEW */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-4 lg:col-span-5">
+                <div className="relative">
+                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold absolute top-0 -left-6 z-10">4</div>
+                  <div className="rounded-xl overflow-hidden">
+                    <Image
+                      src="/images/ongoing-support.jpg"
+                      alt="Ongoing Support & Growth"
+                      width={550}
+                      height={360}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-8 lg:col-span-7">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ongoing Support & Growth</h3>
+                <p className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-4">
+                  We provide continuous support and optimization to maximize your business results.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Regular performance monitoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Continuous optimization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-1 mr-2" />
+                    <span className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">Business impact tracking</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -422,77 +423,40 @@ export default function HowItWorks() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Common Questions About Our Process</h2>
-            <p className="text-xl text-gray-600">
-              Everything you need to know about working with SingletonsGroup
+            <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <p className="mt-4 text-xl font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] max-w-3xl mx-auto">
+              Everything you need to know about our AI implementation process
             </p>
           </div>
-
-          <div className="space-y-4">
+          
+          <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className="border border-gray-200 rounded-xl overflow-hidden bg-white transition-all duration-200 hover:shadow-sm"
-              >
-                <button
-                  className="flex justify-between items-center w-full px-6 py-4 text-left"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <span className="text-lg font-medium text-gray-900">{faq.question}</span>
-                  <svg
-                    className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${openFaq === index ? 'transform rotate-180' : ''}`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {openFaq === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-gray-600">{faq.answer}</p>
-                  </div>
-                )}
+              <div key={index} className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-[15px] font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937]">{faq.answer}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link href="/faq" className="inline-flex items-center text-primary font-medium hover:underline">
-              See All FAQs
-              <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Simplify AI for Your Business?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Schedule a free discovery call today and take the first step toward effortless AI implementation.
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-xl font-['ui-sans-serif,system-ui,sans-serif'] mb-8">
+            Schedule your free discovery call today and start your AI journey with expert guidance.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link
-              href="https://calendly.com/singletonsgroup/consultation"
-              target="_blank"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
-            >
-              Schedule a Free Discovery Call
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 transition-all"
-            >
-              Contact Us Directly
-            </Link>
-          </div>
+          <Link 
+            href="https://calendly.com/singletonsgroup/consultation" 
+            target="_blank"
+            className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-primary bg-white hover:bg-gray-50 shadow-lg transition-all font-['ui-sans-serif,system-ui,sans-serif']"
+          >
+            Request a Custom Quote
+          </Link>
         </div>
       </section>
 

@@ -15,28 +15,31 @@ import WinningWithAI from './components/WinningWithAI';
 import LogoCarousel from './components/LogoCarousel';
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setIsVisible(true);
-    
-    const handleMouseMove = (e: MouseEvent) => {
-      if (heroRef.current) {
-        const rect = heroRef.current.getBoundingClientRect();
-        setCursorPosition({
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top
-        });
-      }
-    };
+    try {
+      const handleMouseMove = (e: MouseEvent) => {
+        if (heroRef.current) {
+          const rect = heroRef.current.getBoundingClientRect();
+          setCursorPosition({
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top
+          });
+        }
+      };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
+      document.addEventListener('mousemove', handleMouseMove);
+      
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+      };
+    } catch (error) {
+      console.error("Error in hero section effect:", error);
+      setIsVisible(true);
+    }
   }, []);
 
   const scrollToVideo = () => {
@@ -56,11 +59,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden bg-white">
+      <section className="relative pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden bg-white" ref={heroRef}>
         {/* Content starts directly with minimal decorative elements */}
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-2 md:py-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} delay-300`}>
+            <div className={`transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               {/* Announcement banner like Mercor's */}
               <div className="inline-block mb-4 px-4 py-1.5 bg-gray-100 rounded-full">
                 <p className="text-sm font-medium text-text-sub">
@@ -97,7 +100,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className={`relative transition-all duration-1000 transform ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'} delay-500`}>
+            <div className={`relative transition-all duration-700 transform ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
               {/* AI Visualization without the colored border for better blending */}
               <div className="rounded-xl">
                 <AIVisualization />
