@@ -125,6 +125,28 @@ We use a 4px (0.25rem) baseline grid for consistent spacing:
 - Border Radius: 8px (rounded-lg)
 - Focus: Royal Blue border, light blue focus ring
 
+## Standard Page Components
+
+### Call-to-Action (CTA) Section
+- **Appearance**: Full-width blue background with white text
+- **Heading**: "Ready to Transform Your Business with AI?"
+- **Subheading**: "Schedule a consultation with our AI experts and discover how our solutions can streamline operations, boost productivity, and drive growth for your business."
+- **Button**: Primary white button with blue text that reads "Schedule a Free Consultation"
+- **Trust Indicators**: Four trust indicators displayed below the button (Trusted by 500+ SMBs, 1000+ AI Partners, 98% Client Satisfaction, 30-Day Satisfaction Guarantee)
+- **Placement**: Should appear as the last main section before the footer on ALL pages
+- **Component**: Use the `<CTASection />` component on all pages
+- **Padding**: 80px (py-20) vertical padding
+- **CSS Classes**: `bg-primary py-20 px-4 sm:px-6`
+
+### Footer
+- **Requirement**: Must appear on EVERY page of the website
+- **Content**: Company info, quick links, solutions links, and contact information
+- **Structure**: 4-column grid on desktop, stacked on mobile
+- **Colors**: White background with brand-colored accents
+- **Border**: 1px top border in light gray
+- **Copyright**: Always include current year in copyright notice
+- **Social Links**: Include all social media icons
+
 ## Layout
 
 ### Container
@@ -188,4 +210,5 @@ Use these in Tailwind classes as:
 4. **Simplicity**: Keep interfaces clean and uncluttered
 5. **Alignment**: Use left-alignment for text content (Mercor-style)
 6. **Limited Animation**: Use subtle animations only for purposeful interactions
-7. **Mobile-First**: Design for mobile first, then enhance for larger screens 
+7. **Mobile-First**: Design for mobile first, then enhance for larger screens
+8. **Page Components**: Every page MUST include the standard CTA section and footer 

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import AboutContent from '@/app/components/AboutContent';
+import AboutContent from '../components/AboutContent';
+import CTASection from '../components/CTASection';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'About Us | SingletonsGroup',
@@ -12,5 +14,15 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutContent />;
+  return (
+    <div className="bg-white">
+      <AboutContent />
+      
+      {/* CTA Section */}
+      <CTASection />
+      
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 } 

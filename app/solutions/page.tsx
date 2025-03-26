@@ -8,6 +8,8 @@ import SolutionBuilder from '../components/SolutionBuilder';
 import SolutionBundles from '../components/SolutionBundles';
 import AIGridSolutions from '../components/AIGridSolutions';
 import { allAISolutions } from '../data/aiSolutions';
+import CTASection from '../components/CTASection';
+import Footer from '../components/Footer';
 
 export default function Solutions() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,8 +20,7 @@ export default function Solutions() {
   }, []);
 
   return (
-    <main className="flex flex-col min-h-screen bg-gray-50">
-      
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,22 +72,11 @@ export default function Solutions() {
         </div>
       </div>
 
-      {/* Final CTA */}
-      <div className="bg-primary text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
-          <p className="text-xl font-['ui-sans-serif,system-ui,sans-serif'] mb-8">
-            Take the first step toward a more efficient, productive future with AI that works for your business.
-          </p>
-          <Link 
-            href="https://calendly.com/singletonsgroup/consultation" 
-            target="_blank"
-            className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-primary bg-white hover:bg-gray-100 shadow-lg transition-all font-['ui-sans-serif,system-ui,sans-serif']"
-          >
-            Request a Custom Quote
-          </Link>
-        </div>
-      </div>
-    </main>
+      {/* CTA Section */}
+      <CTASection />
+      
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 } 

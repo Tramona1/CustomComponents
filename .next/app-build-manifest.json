@@ -11,6 +11,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/why-choose-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/why-choose-us/page.js"
+    ],
     "/how-it-works/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -26,10 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/all-solutions/page.js"
     ],
-    "/why-choose-us/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/why-choose-us/page.js"
+      "static/chunks/app/about/page.js"
     ],
     "/pricing/page": [
       "static/chunks/webpack.js",

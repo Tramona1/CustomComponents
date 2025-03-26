@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/Footer';
+import CTASection from '../components/CTASection';
 
 export default function Partners() {
   const [formData, setFormData] = useState({
@@ -47,7 +49,7 @@ export default function Partners() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -64,7 +66,7 @@ export default function Partners() {
       <section className="py-16 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-2xl p-8 md:p-10 shadow-sm border border-gray-200">
-            <h2 className="text-2xl font-bold text-text-main mb-6">
+            <h2 className="text-2xl font-bold text-[#1F2937] mb-6">
               Become a Partner
             </h2>
             
@@ -192,7 +194,7 @@ export default function Partners() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-main mb-8 text-center">
+            <h2 className="text-3xl font-bold text-[#1F2937] mb-8 text-center">
               Why Partner With SingletonsGroup?
             </h2>
             
@@ -272,7 +274,7 @@ export default function Partners() {
       <section className="py-16 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-text-main mb-6">
+            <h2 className="text-3xl font-bold text-[#1F2937] mb-6">
               The Partnership Process
             </h2>
             <p className="text-lg text-text-sub max-w-3xl mx-auto">
@@ -323,6 +325,12 @@ export default function Partners() {
           </div>
         </div>
       </section>
-    </main>
+      
+      {/* CTA Section */}
+      <CTASection />
+      
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 } 

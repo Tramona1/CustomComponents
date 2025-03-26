@@ -343,43 +343,6 @@ export default function WhyChooseUs() {
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-primary to-blue-600 rounded-3xl overflow-hidden shadow-xl">
-            <div className="relative px-8 py-12 md:p-12 text-center">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <svg width="100%" height="100%">
-                  <defs>
-                    <pattern id="grid-pattern-cta" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <circle cx="10" cy="10" r="1" fill="white" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid-pattern-cta)" />
-                </svg>
-              </div>
-              
-              <div className="relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Ready to Transform Your Business with AI?
-                </h2>
-                <p className="text-xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto">
-                  No technical knowledge required. No obligation. Just a simple conversation about your business challenges and how AI might help.
-                </p>
-                <Link
-                  href="https://calendly.com/singletonsgroup/consultation"
-                  target="_blank"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-md text-primary bg-white hover:bg-opacity-90 md:text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Schedule a Free 30-Minute Consultation
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 } 

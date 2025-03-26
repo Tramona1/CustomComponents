@@ -700,42 +700,6 @@ export default function PricingContent() {
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-primary to-blue-600 rounded-3xl overflow-hidden shadow-xl">
-            <div className="relative px-8 py-12 md:p-12 text-center">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <svg width="100%" height="100%">
-                  <defs>
-                    <pattern id="grid-pattern-cta" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <circle cx="10" cy="10" r="1" fill="white" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid-pattern-cta)" />
-                </svg>
-              </div>
-              
-              <div className="relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Ready to Transform Your Business with AI?
-                </h2>
-                <p className="text-xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto">
-                  Get Your Custom Quote Today – We'll Find the Perfect AI Solutions and Negotiate the Best Pricing on Your Behalf
-                </p>
-                <a
-                  href="#quote-form"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-full text-primary bg-white hover:bg-opacity-90 md:text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Request Your Custom Quote
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 } 

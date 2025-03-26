@@ -112,7 +112,7 @@ export default function AboutContent() {
   }, []);
 
   return (
-    <main className="flex flex-col min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white py-16">
         {/* Light Pattern Background */}
@@ -303,8 +303,76 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* Our Journey Timeline */}
-      <section className="py-14 bg-gray-50">
+      {/* Our Team Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
+              Meet Our Team
+            </h2>
+            <p className="text-xl text-text-sub max-w-3xl mx-auto">
+              Our team is made up of experts in AI, technology, and business.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {teamMembers.map((member) => (
+              <div
+                key={member.name}
+                className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 transition-all hover:shadow-md"
+              >
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-text-main mb-3">{member.name}</h3>
+                <p className="text-text-sub">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
+              Our <span className="text-primary">Values</span>
+            </h2>
+            <p className="text-xl text-text-sub max-w-3xl mx-auto">
+              These core principles guide everything we do and shape how we help businesses navigate the AI landscape.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {values.map((value, index) => (
+              <div
+                key={value.title}
+                className={`bg-white p-8 rounded-xl shadow-sm border border-gray-200 transition-all hover:shadow-md delay-${index * 100} duration-500`}
+              >
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={value.icon} />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-text-main mb-3">{value.title}</h3>
+                <p className="text-text-sub">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Timeline */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
@@ -405,74 +473,6 @@ export default function AboutContent() {
           </div>
         </div>
       </section>
-
-      {/* Company Values */}
-      <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-              Our <span className="text-primary">Values</span>
-            </h2>
-            <p className="text-xl text-text-sub max-w-3xl mx-auto">
-              These core principles guide everything we do and shape how we help businesses navigate the AI landscape.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((value, index) => (
-              <div
-                key={value.title}
-                className={`bg-white p-8 rounded-xl shadow-sm border border-gray-200 transition-all hover:shadow-md delay-${index * 100} duration-500`}
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={value.icon} />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-text-main mb-3">{value.title}</h3>
-                <p className="text-text-sub">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-14 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-primary to-blue-600 rounded-3xl overflow-hidden shadow-xl">
-            <div className="relative px-8 py-12 md:p-12 text-center">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <svg width="100%" height="100%">
-                  <defs>
-                    <pattern id="grid-pattern-cta" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <circle cx="10" cy="10" r="1" fill="white" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid-pattern-cta)" />
-                </svg>
-              </div>
-              
-              <div className="relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Join Us on Our Mission
-                </h2>
-                <p className="text-xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto">
-                  Partner with us to navigate the AI landscape and transform your business with the right solutions.
-                </p>
-                <Link
-                  href="https://calendly.com/singletonsgroup/consultation"
-                  target="_blank"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-full text-primary bg-white hover:bg-opacity-90 md:text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Schedule Your Free Consultation
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
   );
 } 
