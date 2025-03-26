@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 export const metadata: Metadata = {
   title: 'AI Solutions for Small Businesses | SingletonsGroup',
   description: 'Supercharge your small business with AI tools that automate tasks, save time, and boost growth—all set up for you.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 };
 
 export default function RootLayout({
