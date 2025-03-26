@@ -2612,6 +2612,10 @@ body {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.hover\:bg-white\/90:hover {
+  background-color: rgb(255 255 255 / 0.9);
+}
+
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }

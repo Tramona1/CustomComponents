@@ -25,7 +25,7 @@ export default function Solutions() {
       <section className="bg-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-text-main tracking-tight mb-6">
               Simplifying AI for Your Business
             </h1>
             <p className="text-xl text-[#1F2937] mb-8">
@@ -74,7 +74,7 @@ export default function Solutions() {
       <div id="customSolution" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Build Your Custom AI Solution</h2>
+            <h2 className="text-3xl font-bold text-text-main mb-4">Build Your Custom AI Solution</h2>
             <p className="text-xl text-[#1F2937] max-w-3xl mx-auto">
               Tell us about your business, and we'll recommend the perfect AI solution for your specific needs.
             </p>

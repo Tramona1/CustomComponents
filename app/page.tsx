@@ -86,9 +86,8 @@ export default function Home() {
                   Schedule a Free Intro Call
                 </Link>
                 <Link 
-                  href="#solutions-section"
+                  href="https://singletonsgroup.com/solutions"
                   className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 transition-all"
-                  onClick={scrollToSolutions}
                 >
                   See Our Solutions
                   <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

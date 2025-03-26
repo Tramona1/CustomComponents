@@ -18,9 +18,9 @@ const CTASection = () => {
             <Link 
               href="https://calendly.com/blake-singletonsgroup/30min"
               target="_blank"
-              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
+              className="inline-flex items-center justify-center px-8 py-4 border border-white text-base font-medium rounded-full text-primary bg-white hover:bg-white/90 shadow-md transition-all"
             >
-              Book a Free AI Intro Call
+              Book a call to learn what AI can do for you
             </Link>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function HowItWorks() {
   const faqs = [
     {
       question: "What happens during the discovery call?",
-      answer: "During our 30-minute call, we'll discuss your business challenges, goals, and current processes. No technical preparation needed—just bring your business knowledge. We'll explain potential AI solutions tailored to your needs and outline next steps if you'd like to proceed."
+      answer: "During our 15 to 30-minute call, we'll discuss your business challenges, goals, and current processes. No technical preparation needed—just bring your business knowledge. We'll explain potential AI solutions tailored to your needs and outline next steps if you'd like to proceed."
     },
     {
       question: "How long does the AI implementation process take?",
@@ -56,8 +56,8 @@ export default function HowItWorks() {
       <section className="relative bg-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-6">
-              Simplifying AI for Your Business
+            <h1 className="text-4xl sm:text-5xl font-bold text-text-main tracking-tight mb-6">
+              How We Improve Your Business
             </h1>
             <p className="text-xl text-[#1F2937] mb-8">
               Our straightforward process makes implementing AI tools easy, affordable, and stress-free—even if you have zero technical expertise.
@@ -65,9 +65,9 @@ export default function HowItWorks() {
             <Link 
               href="https://calendly.com/blake-singletonsgroup/30min" 
               target="_blank"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-white text-base font-medium rounded-full text-primary bg-white hover:bg-white/90 shadow-md transition-all"
             >
-              Schedule a Free Intro Call
+              Book a call to learn what AI can do for you
             </Link>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function HowItWorks() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Our 4-Step Process</h2>
+            <h2 className="text-3xl font-bold text-text-main">Our 4-Step Process</h2>
             <p className="mt-4 text-xl text-[#1F2937] max-w-3xl mx-auto">
               From discovery to implementation, we handle the entire AI transition for your business.
             </p>
@@ -93,11 +93,11 @@ export default function HowItWorks() {
                 <div className="md:text-right md:pr-16">
                   <div className="md:hidden flex items-center mb-4">
                     <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold">1</div>
-                    <h3 className="text-2xl font-bold text-gray-900 ml-4">Free Discovery Call</h3>
+                    <h3 className="text-2xl font-bold text-text-main ml-4">Free Discovery Call</h3>
                   </div>
-                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">Free Discovery Call</h3>
+                  <h3 className="hidden md:block text-2xl font-bold text-text-main mb-4">Free Discovery Call</h3>
                   <p className="text-[15px] text-[#1F2937] mb-4">
-                    We start with a 30-minute call to understand your business needs, challenges, and goals. No technical jargon—just a conversation about how we can help your business thrive.
+                    We start with a 15 to 30-minute call to understand your business needs, challenges, and goals. No technical jargon—just a conversation about how we can help your business thrive.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start md:justify-end">
@@ -136,9 +136,9 @@ export default function HowItWorks() {
                 <div className="md:order-2 md:pl-16">
                   <div className="md:hidden flex items-center mb-4">
                     <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold">2</div>
-                    <h3 className="text-2xl font-bold text-gray-900 ml-4">Custom AI Plan</h3>
+                    <h3 className="text-2xl font-bold text-text-main ml-4">Custom AI Plan</h3>
                   </div>
-                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">Custom AI Plan</h3>
+                  <h3 className="hidden md:block text-2xl font-bold text-text-main mb-4">Custom AI Plan</h3>
                   <p className="text-[15px] text-[#1F2937] mb-4">
                     Within 48 hours, we'll deliver a tailored AI implementation plan designed specifically for your business needs, complete with tools, timeline, and ROI projections.
                   </p>
@@ -179,9 +179,9 @@ export default function HowItWorks() {
                 <div className="md:text-right md:pr-16">
                   <div className="md:hidden flex items-center mb-4">
                     <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold">3</div>
-                    <h3 className="text-2xl font-bold text-gray-900 ml-4">Full Setup & Integration</h3>
+                    <h3 className="text-2xl font-bold text-text-main ml-4">Full Setup & Integration</h3>
                   </div>
-                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">Full Setup & Integration</h3>
+                  <h3 className="hidden md:block text-2xl font-bold text-text-main mb-4">Full Setup & Integration</h3>
                   <p className="text-[15px] text-[#1F2937] mb-4">
                     We handle all technical setup and integrate seamlessly with your existing systems. Our team takes care of everything from installation to configuration.
                   </p>
@@ -222,9 +222,9 @@ export default function HowItWorks() {
                 <div className="md:order-2 md:pl-16">
                   <div className="md:hidden flex items-center mb-4">
                     <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-semibold">4</div>
-                    <h3 className="text-2xl font-bold text-gray-900 ml-4">Ongoing Support & Growth</h3>
+                    <h3 className="text-2xl font-bold text-text-main ml-4">Ongoing Support & Growth</h3>
                   </div>
-                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">Ongoing Support & Growth</h3>
+                  <h3 className="hidden md:block text-2xl font-bold text-text-main mb-4">Ongoing Support & Growth</h3>
                   <p className="text-[15px] text-[#1F2937] mb-4">
                     We provide continuous support and optimization to maximize your business results. Our team is always available to help you get the most from your AI solutions.
                   </p>
@@ -266,9 +266,9 @@ export default function HowItWorks() {
             <Link 
               href="https://calendly.com/blake-singletonsgroup/30min" 
               target="_blank"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-white text-base font-medium rounded-full text-primary bg-white hover:bg-white/90 shadow-md transition-all"
             >
-              Book Your Free Strategy Call
+              Book a call to learn what AI can do for you
             </Link>
           </div>
         </div>
@@ -294,12 +294,12 @@ export default function HowItWorks() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Jane- Retail Store Owner</h3>
+                  <h3 className="text-xl font-bold text-text-main">Jane- Retail Store Owner</h3>
                   <p className="text-gray-600">Retail Business</p>
                 </div>
               </div>
 
-              <h4 className="font-bold text-gray-900 mb-2">The Challenge</h4>
+              <h4 className="font-bold text-text-main mb-2">The Challenge</h4>
               <p className="text-gray-600 mb-4">
                 Jane was overwhelmed with customer inquiries and spent 15+ hours weekly responding to basic questions, leaving little time for business growth.
               </p>
@@ -310,7 +310,7 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Discovery Call</h5>
+                    <h5 className="font-bold text-text-main">Discovery Call</h5>
                     <p className="text-gray-600">Jane shared her challenge with managing customer inquiries and desire for a 24/7 solution that wouldn't break the bank.</p>
                   </div>
                 </div>
@@ -320,7 +320,7 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Custom Plan</h5>
+                    <h5 className="font-bold text-text-main">Custom Plan</h5>
                     <p className="text-gray-600">We recommended an AI chatbot tailored to her brand, with custom responses to the 20 most common questions.</p>
                   </div>
                 </div>
@@ -330,13 +330,13 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Implementation</h5>
+                    <h5 className="font-bold text-text-main">Implementation</h5>
                     <p className="text-gray-600">We set up the chatbot, integrated it with her website, and trained her team in just 5 days.</p>
                   </div>
                 </div>
               </div>
 
-              <h4 className="font-bold text-gray-900 mb-2">The Results</h4>
+              <h4 className="font-bold text-text-main mb-2">The Results</h4>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -362,7 +362,7 @@ export default function HowItWorks() {
                 <p className="italic text-gray-600 mb-4">
                   "SingletonsGroup made AI so approachable. They found the perfect solution for my needs and handled everything. Now I have more time to focus on growing my business."
                 </p>
-                <p className="font-medium text-gray-900">- Jane T., Owner</p>
+                <p className="font-medium text-text-main">- Jane T., Owner</p>
               </div>
             </div>
 
@@ -375,12 +375,12 @@ export default function HowItWorks() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Mike- Marketing Agency Owner</h3>
+                  <h3 className="text-xl font-bold text-text-main">Mike- Marketing Agency Owner</h3>
                   <p className="text-gray-600">Marketing Agency</p>
                 </div>
               </div>
 
-              <h4 className="font-bold text-gray-900 mb-2">The Challenge</h4>
+              <h4 className="font-bold text-text-main mb-2">The Challenge</h4>
               <p className="text-gray-600 mb-4">
                 Mike's team was spending 20+ hours per week on repetitive content creation tasks, limiting their capacity to take on new clients.
               </p>
@@ -391,7 +391,7 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Discovery Call</h5>
+                    <h5 className="font-bold text-text-main">Discovery Call</h5>
                     <p className="text-gray-600">Mike explained how content creation was bottlenecking his agency's growth and wanted a solution to scale production.</p>
                   </div>
                 </div>
@@ -401,7 +401,7 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Custom Plan</h5>
+                    <h5 className="font-bold text-text-main">Custom Plan</h5>
                     <p className="text-gray-600">We recommended an AI content assistant that could generate first drafts and integrate with their existing workflow tools.</p>
                   </div>
                 </div>
@@ -411,13 +411,13 @@ export default function HowItWorks() {
                     <span className="text-primary font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h5 className="font-bold text-gray-900">Implementation</h5>
+                    <h5 className="font-bold text-text-main">Implementation</h5>
                     <p className="text-gray-600">We set up the AI solution, created templates, and trained his team over a 1-week period.</p>
                   </div>
                 </div>
               </div>
 
-              <h4 className="font-bold text-gray-900 mb-2">The Results</h4>
+              <h4 className="font-bold text-text-main mb-2">The Results</h4>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -443,7 +443,7 @@ export default function HowItWorks() {
                 <p className="italic text-gray-600 mb-4">
                   "I was skeptical about AI for creative work, but SingletonsGroup found a solution that enhances our creativity rather than replacing it. The ROI has been incredible."
                 </p>
-                <p className="font-medium text-gray-900">- Mike R., Agency Owner</p>
+                <p className="font-medium text-text-main">- Mike R., Agency Owner</p>
               </div>
             </div>
           </div>
@@ -463,7 +463,7 @@ export default function HowItWorks() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-text-main">Frequently Asked Questions</h2>
             <p className="mt-4 text-xl text-[#1F2937] max-w-3xl mx-auto">
               Everything you need to know about our AI implementation process
             </p>
@@ -472,7 +472,7 @@ export default function HowItWorks() {
           <div className="space-y-6">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <h3 className="text-xl font-semibold text-text-main mb-2">{faq.question}</h3>
                 <p className="text-[15px] text-[#1F2937]">{faq.answer}</p>
               </div>
             ))}
