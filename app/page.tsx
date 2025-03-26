@@ -14,7 +14,6 @@ import AIVisualization from './components/AIVisualization';
 import WinningWithAI from './components/WinningWithAI';
 import LogoCarousel from './components/LogoCarousel';
 import CTASection from './components/CTASection';
-import Footer from './components/Footer';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
@@ -252,19 +251,15 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <div className="flex flex-wrap gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-text-main mb-2">{solution.title}</h3>
+                    <div className="flex flex-wrap gap-2">
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.highlightColor}`}>
                         {solution.highlight}
                       </span>
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.complexityColor}`}>
                         {solution.complexity}
                       </span>
-                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${solution.costColor}`}>
-                        {solution.cost}
-                      </span>
                     </div>
-                    
-                    <h3 className="text-xl font-bold text-text-main mb-1">{solution.title}</h3>
                   </div>
                 </div>
                 <p className="text-text-sub mb-6">
@@ -326,9 +321,6 @@ export default function Home() {
 
       {/* CTA Section */}
       <CTASection />
-      
-      {/* Footer */}
-      <Footer />
     </div>
   );
 } 

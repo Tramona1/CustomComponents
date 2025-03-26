@@ -50,20 +50,20 @@ export default function Partners() {
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <section className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Section - Reduced padding */}
+      <section className="relative pt-12 pb-10 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-text-main mb-6 transition-all duration-700">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-main mb-4 transition-all duration-700">
             Partner With Us to Grow Your AI Business
           </h1>
-          <p className="text-xl text-text-sub max-w-3xl mx-auto mb-12">
+          <p className="text-xl text-text-sub max-w-3xl mx-auto mb-8">
             Join our network of trusted AI solution providers and connect with businesses who need your technology.
           </p>
         </div>
       </section>
       
-      {/* Form Section - Moved to the top */}
-      <section className="py-16 bg-white border-b border-gray-100">
+      {/* Form Section - Reduced vertical spacing */}
+      <section className="py-10 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-2xl p-8 md:p-10 shadow-sm border border-gray-200">
             <h2 className="text-2xl font-bold text-[#1F2937] mb-6">
@@ -190,15 +190,15 @@ export default function Partners() {
         </div>
       </section>
       
-      {/* Why Partner With Us Section */}
-      <section className="py-16 bg-white">
+      {/* Why Partner With Us Section - Reduced vertical spacing */}
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1F2937] mb-8 text-center">
+            <h2 className="text-3xl font-bold text-[#1F2937] mb-6 text-center">
               Why Partner With SingletonsGroup?
             </h2>
             
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 rounded-md bg-primary bg-opacity-10 flex items-center justify-center mr-4">
                   <svg className="h-6 w-6 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -257,7 +257,7 @@ export default function Partners() {
               </div>
             </div>
             
-            <div className="mt-10 p-6 bg-blue-50 rounded-xl">
+            <div className="mt-8 p-6 bg-blue-50 rounded-xl">
               <h3 className="text-xl font-bold text-text-main mb-3">Our Partner Network Includes:</h3>
               <p className="text-text-sub mb-4">
                 AI solutions across all major categories, from automation and customer service to data analysis, content generation, and specialized industry tools.
@@ -270,11 +270,11 @@ export default function Partners() {
         </div>
       </section>
       
-      {/* Partnership Process - Moved below the "Why Partner With Us" section */}
-      <section className="py-16 bg-gray-50 border-y border-gray-100">
+      {/* Partnership Process - Reduced vertical spacing and improved responsiveness */}
+      <section className="py-10 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-[#1F2937] mb-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#1F2937] mb-4">
               The Partnership Process
             </h2>
             <p className="text-lg text-text-sub max-w-3xl mx-auto">
@@ -282,9 +282,9 @@ export default function Partners() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-xl font-bold text-primary">1</span>
               </div>
               <h3 className="text-xl font-bold text-text-main mb-3">Initial Contact</h3>
@@ -294,7 +294,7 @@ export default function Partners() {
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-xl font-bold text-primary">2</span>
               </div>
               <h3 className="text-xl font-bold text-text-main mb-3">Solution Review</h3>
@@ -304,7 +304,7 @@ export default function Partners() {
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-xl font-bold text-primary">3</span>
               </div>
               <h3 className="text-xl font-bold text-text-main mb-3">Partnership Agreement</h3>
@@ -314,7 +314,7 @@ export default function Partners() {
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-xl font-bold text-primary">4</span>
               </div>
               <h3 className="text-xl font-bold text-text-main mb-3">Active Collaboration</h3>

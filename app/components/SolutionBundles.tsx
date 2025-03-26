@@ -22,8 +22,8 @@ const bundles: Bundle[] = [
     name: 'Communication Assistant',
     tagline: 'Streamline daily communication tasks',
     description: 'Perfect for small businesses looking to save time on emails, meetings, and customer interactions.',
-    price: 'Starting at $199/mo',
-    setupTime: '1-2 days',
+    price: 'Customized for your business needs',
+    setupTime: '',
     idealFor: ['Solo entrepreneurs', 'Small teams (1-5 employees)', 'Service businesses'],
     solutions: [
       'Email drafting and management',
@@ -39,8 +39,8 @@ const bundles: Bundle[] = [
     name: 'Customer Experience Bundle',
     tagline: 'Enhance your customer interactions',
     description: 'Elevate your customer service with AI-powered tools that provide fast, personalized support.',
-    price: 'Starting at $349/mo',
-    setupTime: '3-5 days',
+    price: 'Tailored to your requirements',
+    setupTime: '',
     idealFor: ['Small to medium businesses', 'E-commerce stores', 'Service-based businesses'],
     solutions: [
       '24/7 customer chat support',
@@ -56,8 +56,8 @@ const bundles: Bundle[] = [
     name: 'Business Operations Suite',
     tagline: 'Transform your business workflows',
     description: 'Comprehensive AI solution set that optimizes core business processes and unlocks new efficiencies.',
-    price: 'Starting at $599/mo',
-    setupTime: '1-2 weeks',
+    price: 'Custom enterprise pricing',
+    setupTime: '',
     idealFor: ['Growing businesses', 'Professional services firms', 'Multi-location businesses'],
     solutions: [
       'Document analysis and processing',
@@ -83,22 +83,13 @@ export default function SolutionBundles() {
   };
 
   return (
-    <section id="popular-bundles" className="py-20 bg-white">
+    <section id="popular-bundles" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Popular AI Solution Bundles
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our pre-packaged AI bundles make implementation simple. Start with these popular combinations or customize to your specific needs.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {bundles.map((bundle) => (
             <div
               key={bundle.id}
-              className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border-2 border-gray-100`}
+              className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border-2 border-gray-100 flex flex-col`}
             >
               {/* Bundle Header */}
               <div className="p-6 bg-gradient-to-r from-primary-light to-primary relative overflow-hidden">
@@ -126,20 +117,14 @@ export default function SolutionBundles() {
               </div>
 
               {/* Bundle Content */}
-              <div className="p-6 space-y-5">
+              <div className="p-6 space-y-5 flex-grow flex flex-col">
                 <div>
                   <p className="text-gray-600">{bundle.description}</p>
                 </div>
 
-                <div className="flex justify-between">
-                  <div>
-                    <p className="text-sm text-gray-500">Starting Price</p>
-                    <p className="text-lg font-semibold text-gray-900">{bundle.price}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Setup Time</p>
-                    <p className="text-lg font-semibold text-gray-900">{bundle.setupTime}</p>
-                  </div>
+                <div>
+                  <p className="text-sm text-gray-500">Pricing</p>
+                  <p className="text-lg font-semibold text-gray-900">{bundle.price}</p>
                 </div>
 
                 <div>
@@ -158,7 +143,7 @@ export default function SolutionBundles() {
                   </ul>
                 </div>
 
-                <div>
+                <div className="flex-grow">
                   <button
                     onClick={() => toggleBundle(bundle.id)}
                     className="text-primary hover:text-primary-dark font-medium text-sm flex items-center focus:outline-none transition-colors w-full justify-between"
@@ -193,16 +178,18 @@ export default function SolutionBundles() {
                   )}
                 </div>
 
-                <Link
-                  href="https://calendly.com/singletonsgroup/consultation"
-                  target="_blank"
-                  className="mt-4 inline-flex w-full items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark transition-colors"
-                >
-                  Get This Bundle
-                  <svg className="ml-2 -mr-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
+                <div className="mt-auto pt-4">
+                  <Link
+                    href="https://calendly.com/singletonsgroup/consultation"
+                    target="_blank"
+                    className="inline-flex w-full items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark transition-colors"
+                  >
+                    Get This Bundle
+                    <svg className="ml-2 -mr-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

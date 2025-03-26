@@ -26,26 +26,37 @@ export default function Solutions() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-6">
-              AI Solutions That Grow Your Business
+              Simplifying AI for Your Business
             </h1>
-            <p className="text-xl font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] mb-8">
+            <p className="text-xl text-[#1F2937] mb-8">
               Find the perfect AI tools to save time, reduce costs, and boost efficiency—no technical expertise required.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
                 href="#popular-bundles"
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all font-['ui-sans-serif,system-ui,sans-serif']"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
               >
                 View AI Bundles
               </a>
               <Link
                 href="https://calendly.com/singletonsgroup/consultation"
                 target="_blank"
-                className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-[15px] font-medium rounded-full text-[#1F2937] bg-white hover:bg-gray-50 transition-all font-['ui-sans-serif,system-ui,sans-serif']"
+                className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-[15px] font-medium rounded-full text-[#1F2937] bg-white hover:bg-gray-50 transition-all"
               >
                 Request a Custom Quote
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Text Section - New Style */}
+      <section className="bg-white pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">
+              Start quickly with our <span className="text-primary">ready-to-deploy</span> generic AI bundles designed for genral business needs
+            </h2>
           </div>
         </div>
       </section>
@@ -64,7 +75,7 @@ export default function Solutions() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Build Your Custom AI Solution</h2>
-            <p className="text-xl font-['ui-sans-serif,system-ui,sans-serif'] text-[#1F2937] max-w-3xl mx-auto">
+            <p className="text-xl text-[#1F2937] max-w-3xl mx-auto">
               Tell us about your business, and we'll recommend the perfect AI solution for your specific needs.
             </p>
           </div>

@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Image from 'next/image';
 import CTASection from '../components/CTASection';
-import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Why Choose Us | SingletonsGroup',
@@ -21,9 +20,6 @@ export default function WhyChooseUsPage() {
 
       {/* CTA Section */}
       <CTASection />
-      
-      {/* Footer */}
-      <Footer />
     </div>
   );
 } 

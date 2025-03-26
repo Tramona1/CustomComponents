@@ -4,42 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-// Team data
-const teamMembers = [
-  {
-    name: 'Alexandra Chen',
-    role: 'Founder & CEO',
-    bio: 'Former AI strategy consultant with 15+ years experience helping businesses implement cutting-edge technology. Started the company to make AI accessible for small businesses.',
-    image: '/images/team/alex.jpg',
-    placeholder: 'AC',
-    color: 'bg-blue-100 text-blue-800'
-  },
-  {
-    name: 'Marcus Williams',
-    role: 'Chief Technology Officer',
-    bio: 'Ex-Google AI engineer with expertise in machine learning integration and solution architecture. Passionate about simplifying complex technologies.',
-    image: '/images/team/marcus.jpg',
-    placeholder: 'MW',
-    color: 'bg-purple-100 text-purple-800'
-  },
-  {
-    name: 'Sarah Johnson',
-    role: 'Head of Client Success',
-    bio: 'Background in business operations and technology adoption. Sarah ensures every client implementation delivers measurable ROI and solves real problems.',
-    image: '/images/team/sarah.jpg',
-    placeholder: 'SJ',
-    color: 'bg-green-100 text-green-800'
-  },
-  {
-    name: 'David Rodriguez',
-    role: 'AI Solutions Architect',
-    bio: 'Specialized in matching business needs with perfect-fit AI solutions. David has helped 50+ small businesses successfully adopt AI tools.',
-    image: '/images/team/david.jpg',
-    placeholder: 'DR',
-    color: 'bg-orange-100 text-orange-800'
-  }
-];
-
 // Company milestones
 const milestones = [
   {
@@ -299,43 +263,6 @@ export default function AboutContent() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-text-sub max-w-3xl mx-auto">
-              Our team is made up of experts in AI, technology, and business.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {teamMembers.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 transition-all hover:shadow-md"
-              >
-                <div className="flex items-center justify-center mb-6">
-                  <div className="w-20 h-20 rounded-full overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-text-main mb-3">{member.name}</h3>
-                <p className="text-text-sub">{member.role}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
