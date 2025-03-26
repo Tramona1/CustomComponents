@@ -58,12 +58,12 @@ const VideoSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <Link 
-            href="https://calendly.com/singletonsgroup/consultation" 
+          <Link
+            href="https://calendly.com/blake-singletonsgroup/30min"
             target="_blank" 
             className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
           >
-            Schedule a Free Intro Call
+            Schedule a Demo Call
           </Link>
         </div>
       </div>

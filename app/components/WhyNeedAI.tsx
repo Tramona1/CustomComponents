@@ -205,11 +205,11 @@ const WhyNeedAI = () => {
           No technical knowledge required. No obligation. Just a simple conversation about your business challenges and how AI might help.
         </p>
         <Link 
-          href="https://calendly.com/singletonsgroup/consultation" 
-          target="_blank" 
-          className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+          href="https://calendly.com/blake-singletonsgroup/30min" 
+          target="_blank"
+          className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
         >
-          Schedule a Free 30-Minute Consultation
+          Schedule a Free AI Consultation
         </Link>
       </div>
     </div>

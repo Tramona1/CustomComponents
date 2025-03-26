@@ -161,7 +161,7 @@ const Header = () => {
             {/* CTA Button (Desktop) */}
             {!showMobileMenu && (
               <Link 
-                href="https://calendly.com/singletonsgroup/consultation" 
+                href="https://calendly.com/blake-singletonsgroup/30min" 
                 target="_blank" 
                 className="inline-flex items-center justify-center px-3 lg:px-6 py-1.5 lg:py-2.5 border border-transparent text-xs lg:text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
               >
@@ -305,7 +305,7 @@ const Header = () => {
             {/* Mobile CTA at bottom */}
             <div className="px-4 py-4 border-t border-gray-100">
               <Link
-                href="https://calendly.com/singletonsgroup/consultation"
+                href="https://calendly.com/blake-singletonsgroup/30min"
                 target="_blank"
                 className="block w-full px-4 py-2.5 text-center text-white bg-primary hover:bg-primary-dark rounded-full shadow-sm font-medium text-sm"
                 onClick={() => setIsMenuOpen(false)}

@@ -270,7 +270,7 @@ Recommended Solution: ${getRecommendation().title}
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
                     <Link
-                      href="https://calendly.com/singletonsgroup/consultation"
+                      href="https://calendly.com/blake-singletonsgroup/30min"
                       target="_blank"
                       className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
                     >

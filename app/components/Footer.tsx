@@ -60,7 +60,7 @@ const Footer = () => {
               </li>
               <li className="mt-6">
                 <Link 
-                  href="https://calendly.com/singletonsgroup/consultation" 
+                  href="https://calendly.com/blake-singletonsgroup/30min" 
                   target="_blank"
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
                 >

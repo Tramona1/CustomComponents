@@ -111,11 +111,11 @@ export default function AboutContent() {
                 We're creating a world where every business can benefit from AI. We want to eliminate the complexity and improve all our partners buinesses.
               </p>
               <Link 
-                href="https://calendly.com/singletonsgroup/consultation" 
-                target="_blank" 
+                href="https://calendly.com/blake-singletonsgroup/30min" 
+                target="_blank"
                 className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
               >
-                Schedule a Free 30-Minute Consultation
+                Schedule a Free Intro Call
               </Link>
             </div>
           </div>
@@ -389,11 +389,11 @@ export default function AboutContent() {
                   the same: to make AI simple, accessible, and impactful for your business.
                 </p>
                 <Link
-                  href="https://calendly.com/singletonsgroup/consultation"
+                  href="https://calendly.com/blake-singletonsgroup/30min"
                   target="_blank"
                   className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
                 >
-                  Schedule a Free Intro Call to Start Your AI Journey
+                  Schedule a Call with Our Team
                 </Link>
               </div>
             </div>

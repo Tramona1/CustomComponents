@@ -39,11 +39,11 @@ export default function Solutions() {
                 View AI Bundles
               </a>
               <Link
-                href="https://calendly.com/singletonsgroup/consultation"
+                href="https://calendly.com/blake-singletonsgroup/30min"
                 target="_blank"
-                className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-[15px] font-medium rounded-full text-[#1F2937] bg-white hover:bg-gray-50 transition-all"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
               >
-                Request a Custom Quote
+                Schedule a Free Consultation
               </Link>
             </div>
           </div>

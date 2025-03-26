@@ -79,7 +79,7 @@ export default function Home() {
               AI should be straightforward and effective, not overwhelming. We partner with you to understand your unique challenges and select the best tools from our network of over 1,000 AI solutions—tailored to fit your business perfectly. </p>
               <div className="flex flex-col sm:flex-row gap-5">
                 <Link 
-                  href="https://calendly.com/singletonsgroup/consultation" 
+                  href="https://calendly.com/blake-singletonsgroup/30min" 
                   target="_blank" 
                   className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
                 >

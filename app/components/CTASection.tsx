@@ -14,13 +14,15 @@ const CTASection = () => {
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mb-8">
             Schedule a consultation with our AI experts and discover how our solutions can streamline operations, boost productivity, and drive growth for your business.
           </p>
-          <Link 
-            href="https://calendly.com/singletonsgroup/consultation" 
-            target="_blank" 
-            className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-primary bg-white hover:bg-gray-100 shadow-lg transition-all"
-          >
-            Schedule a Free Consultation
-          </Link>
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <Link 
+              href="https://calendly.com/blake-singletonsgroup/30min"
+              target="_blank"
+              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
+            >
+              Book a Free AI Intro Call
+            </Link>
+          </div>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">

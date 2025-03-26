@@ -180,14 +180,11 @@ export default function SolutionBundles() {
 
                 <div className="mt-auto pt-4">
                   <Link
-                    href="https://calendly.com/singletonsgroup/consultation"
+                    href="https://calendly.com/blake-singletonsgroup/30min"
                     target="_blank"
-                    className="inline-flex w-full items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark transition-colors"
+                    className="inline-flex w-full items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
                   >
-                    Get This Bundle
-                    <svg className="ml-2 -mr-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    Schedule a Free Consultation
                   </Link>
                 </div>
               </div>
@@ -200,11 +197,11 @@ export default function SolutionBundles() {
             Don't see what you're looking for? We can create a custom bundle tailored to your specific needs.
           </p>
           <Link
-            href="https://calendly.com/singletonsgroup/consultation"
+            href="https://calendly.com/blake-singletonsgroup/30min"
             target="_blank"
-            className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
           >
-            Schedule a Custom Bundle Consultation
+            Schedule a Free Consultation
           </Link>
         </div>
       </div>

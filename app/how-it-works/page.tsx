@@ -63,11 +63,11 @@ export default function HowItWorks() {
               Our straightforward process makes implementing AI tools easy, affordable, and stress-free—even if you have zero technical expertise.
             </p>
             <Link 
-              href="https://calendly.com/singletonsgroup/consultation" 
+              href="https://calendly.com/blake-singletonsgroup/30min" 
               target="_blank"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
             >
-              Request a Custom Solution
+              Schedule a Free Intro Call
             </Link>
           </div>
         </div>
@@ -264,11 +264,11 @@ export default function HowItWorks() {
 
           <div className="mt-20 text-center">
             <Link 
-              href="https://calendly.com/singletonsgroup/consultation" 
-              target="_blank" 
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-[15px] font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              href="https://calendly.com/blake-singletonsgroup/30min" 
+              target="_blank"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
             >
-              Schedule Your Free Discovery Call
+              Book Your Free Strategy Call
             </Link>
           </div>
         </div>

@@ -148,12 +148,12 @@ export default function WhyChooseUs() {
               <p className="text-xl text-text-sub mb-8">
                 Each business is different, and AI is complex. We are the only company that sits down with you and finds the perfect solution for your business.
               </p>
-              <Link 
-                href="https://calendly.com/singletonsgroup/consultation" 
-                target="_blank" 
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-md transition-all"
+              <Link
+                href="https://calendly.com/blake-singletonsgroup/30min"
+                target="_blank"
+                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark shadow-sm transition-all"
               >
-                Schedule a Free 30-Minute Consultation
+                Book a Free AI Intro Call
               </Link>
             </div>
           </div>
