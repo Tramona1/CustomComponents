@@ -431,7 +431,7 @@ Accessibility: WCAG 2.1 compliance (contrast, alt text, keyboard navigation).
 Performance: Fast load times (optimize images, asynchronous scripts).
 Security: HTTPS (SSL certificate).
 Analytics: Google Analytics for tracking metrics.
-SEO: Unique titles, meta descriptions, headers (e.g., "AI Solutions for Small Businesses | [Your Company Name]").
+SEO: Unique titles, meta descriptions, headers (e.g., " Businesses | [Your Company Name]").
 Contact: Email or phone in footer (e.g., info@yourcompany.com) in royal blue.
 Footer:
 Copyright: "© 2023 [Your Company Name]. All rights reserved." in dark gray.
@@ -439,4 +439,4 @@ Links: Privacy Policy, Terms of Service in royal blue.
 Optional: Social media icons in royal blue or secondary CTA (e.g., "Still have questions? Contact us." in royal blue).
 Legal: Consent checkbox for Privacy Policy/Terms on forms (GDPR/CCPA compliance).
 Calendly: Embed widget on all CTAs/forms with mock URL: https://calendly.com/yourcompany/consultation (replace later).
-Navigation: Sticky header, highlight active page in royal blue, inspired by Salesforce's intuitive navigation.
+Navigation: Sticky header, AI Solutions for Smallhighlight active page in royal blue, inspired by Salesforce's intuitive navigation.
