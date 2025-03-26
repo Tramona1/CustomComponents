@@ -114,7 +114,7 @@ export default function Home() {
       <section className="py-12 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-8">
-            AI Is Confusing—We Understand. We're Here to Make It Simple.
+            AI Is Confusing—We Understand. We're Here to Make It Simple and Useful.
           </h2>
           
           <p className="text-lg text-text-sub mb-10 max-w-3xl mx-auto">

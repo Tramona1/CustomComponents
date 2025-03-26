@@ -117,9 +117,16 @@ export async function POST(request: Request) {
       painPointMessage = ` Based on your interest in addressing ${painPoint}, we're already thinking about solutions that could help streamline this area of your business.`;
     }
     
+    /* 
+    // TEMPORARILY COMMENTED OUT: Auto-response emails are disabled until domain verification
+    // To re-enable:
+    // 1. Verify your domain at resend.com/domains
+    // 2. Update the "from" address below to use your verified domain (e.g., noreply@singletonsgroup.com)
+    // 3. Uncomment this section
+    
     // STEP 2: Send auto-response email to the user
     const userEmailResult = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Using Resend's verified sender domain
+      from: 'onboarding@resend.dev', // Change to your verified domain email after verification
       to: email,
       subject: 'Thank you for contacting SingletonsGroup',
       html: `
@@ -201,11 +208,15 @@ export async function POST(request: Request) {
       console.error('Error sending user auto-response email:', userEmailResult.error);
       // Still return success since we sent the admin email successfully
     }
+    */
+    
+    // Log a message indicating we're not sending auto-response emails
+    console.log('Auto-response email temporarily disabled - only admin notification sent');
     
     return NextResponse.json({ 
       success: true, 
       adminEmail: adminEmailResult.data,
-      userEmail: userEmailResult.data || userEmailResult.error
+      // userEmail: userEmailResult.data || userEmailResult.error
     });
   } catch (error) {
     console.error('Error processing request:', error);
