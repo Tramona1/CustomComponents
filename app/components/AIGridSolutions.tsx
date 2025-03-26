@@ -208,7 +208,7 @@ const AIGridSolutions = ({ solutions }: AIGridSolutionsProps) => {
     });
   };
 
-  const handleSubmitInquiry = (e: React.FormEvent) => {
+  const handleSubmitInquiry = async (e: React.FormEvent) => {
     e.preventDefault();
     // Validate form
     if (!formData.email || !formData.businessName || !formData.needs) {
@@ -216,26 +216,59 @@ const AIGridSolutions = ({ solutions }: AIGridSolutionsProps) => {
       return;
     }
     
-    // Submit form logic here - for now we'll just simulate success
-    console.log('Form submitted:', formData);
-    
-    // Show success message
-    setFormSubmitted(true);
     setFormError('');
     
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setShowInquiryForm(false);
-      setFormSubmitted(false);
-      setFormData({
-        email: '',
-        businessName: '',
-        industry: '',
-        needs: '',
-        solutionId: '',
-        solutionTitle: ''
+    try {
+      // Send the form data to our API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.businessName,
+          subject: `Inquiry about ${formData.solutionTitle}`,
+          message: `
+Business Name: ${formData.businessName}
+Industry: ${formData.industry || 'Not specified'}
+Solution ID: ${formData.solutionId}
+Solution Title: ${formData.solutionTitle}
+
+Business Needs:
+${formData.needs}
+          `,
+          formType: 'AI Solution Inquiry',
+          page: 'AI Solutions Catalog'
+        }),
       });
-    }, 3000);
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+      
+      // Show success message
+      setFormSubmitted(true);
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setShowInquiryForm(false);
+        setFormSubmitted(false);
+        setFormData({
+          email: '',
+          businessName: '',
+          industry: '',
+          needs: '',
+          solutionId: '',
+          solutionTitle: ''
+        });
+      }, 3000);
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setFormError('Something went wrong. Please try again.');
+    }
   };
 
   return (

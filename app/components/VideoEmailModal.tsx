@@ -2,13 +2,21 @@
 
 import { useState } from 'react';
 
-interface VideoEmailModalProps {
+type VideoEmailModalProps = {
   isOpen: boolean;
   onClose: () => void;
   onEmailSubmit: (email: string) => void;
-}
+  videoTitle?: string;
+  pageLocation?: string;
+};
 
-const VideoEmailModal = ({ isOpen, onClose, onEmailSubmit }: VideoEmailModalProps) => {
+const VideoEmailModal = ({ 
+  isOpen, 
+  onClose, 
+  onEmailSubmit,
+  videoTitle = 'Demo Video',
+  pageLocation = 'Product Page'
+}: VideoEmailModalProps) => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,11 +40,32 @@ const VideoEmailModal = ({ isOpen, onClose, onEmailSubmit }: VideoEmailModalProp
     setIsSubmitting(true);
 
     try {
-      // In a real application, you would send this data to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send the form data to our API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          subject: 'Video Demo Access Request',
+          message: `A user has requested access to watch the "${videoTitle}" video on singletonsgroup.com.`,
+          formType: 'Video Access Request',
+          page: pageLocation
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+      
+      // Still call onEmailSubmit to unlock the video
       onEmailSubmit(email);
       setEmail('');
     } catch (err) {
+      console.error('Error submitting form:', err);
       setError('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);

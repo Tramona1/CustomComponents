@@ -14,19 +14,47 @@ export default function AIVisualization({
   const [email, setEmail] = useState("");
   const [industry, setIndustry] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would handle form submission here
-    console.log("Form submitted:", { email, industry });
-    setSubmitted(true);
+    setError("");
     
-    // Reset form after a delay
-    setTimeout(() => {
-      setSubmitted(false);
-      setEmail("");
-      setIndustry("");
-    }, 3000);
+    try {
+      // Send the form data to our API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          subject: 'AI Strategy Request',
+          message: `Industry: ${industry}\n\nUser is interested in getting an AI strategy for their business.`,
+          formType: 'AI Strategy Request',
+          page: 'AI Visualization Widget'
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+      
+      // Success! Form was submitted and email was sent
+      setSubmitted(true);
+      
+      // Reset form after a delay
+      setTimeout(() => {
+        setSubmitted(false);
+        setEmail("");
+        setIndustry("");
+      }, 3000);
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setError("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -67,6 +95,11 @@ export default function AIVisualization({
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                  {error && (
+                    <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded text-white text-sm">
+                      {error}
+                    </div>
+                  )}
                   <div className="mb-6">
                     <label htmlFor="email" className="block text-white text-sm font-medium mb-2">
                       Your email address

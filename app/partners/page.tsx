@@ -24,28 +24,53 @@ export default function Partners() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send the form data to your server or a third-party service
-    console.log('Partner form submitted:', formData);
     
-    // Simulate successful submission
-    setFormData(prevState => ({
-      ...prevState,
-      submitted: true
-    }));
-    
-    // In a real app, you'd reset the form after server confirmation
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        companyName: '',
-        aiSolution: '',
-        message: '',
-        submitted: false
+    try {
+      // Send the form data to our API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.name,
+          subject: 'New Partnership Inquiry',
+          message: `Company: ${formData.companyName}\nAI Solution: ${formData.aiSolution}\n\nMessage: ${formData.message}`,
+          formType: 'Partnership Inquiry',
+          page: 'Partners Page'
+        }),
       });
-    }, 5000);
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+      
+      // Success! Form was submitted and email was sent
+      setFormData(prevState => ({
+        ...prevState,
+        submitted: true
+      }));
+      
+      // Reset the form after a delay
+      setTimeout(() => {
+        setFormData({
+          name: '',
+          email: '',
+          companyName: '',
+          aiSolution: '',
+          message: '',
+          submitted: false
+        });
+      }, 5000);
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      // In a real app, you'd show an error message to the user
+    }
   };
 
   return (

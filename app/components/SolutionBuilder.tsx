@@ -74,10 +74,53 @@ const SolutionBuilder = () => {
   const [businessSize, setBusinessSize] = useState('');
   const [challenge, setChallenge] = useState('');
   const [showResults, setShowResults] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setShowResults(true);
+    
+    // Only submit to API if email is provided
+    if (email) {
+      setIsSubmitting(true);
+      setError('');
+      
+      try {
+        // Send the form data to our API endpoint
+        const response = await fetch('/api/submit-form', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            subject: 'Solution Builder Recommendation',
+            message: `
+Industry: ${industries.find(i => i.value === industry)?.label || industry}
+Business Size: ${businessSizes.find(b => b.value === businessSize)?.label || businessSize}
+Primary Challenge: ${challenges.find(c => c.value === challenge)?.label || challenge}
+
+Recommended Solution: ${getRecommendation().title}
+            `,
+            formType: 'Solution Builder',
+            page: 'Solution Builder Tool'
+          }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Failed to submit form');
+        }
+      } catch (err) {
+        console.error('Error submitting form:', err);
+        setError('There was an error saving your information. Your recommendation is still shown below.');
+      } finally {
+        setIsSubmitting(false);
+      }
+    }
   };
 
   // Get recommendation based on selection
@@ -164,6 +207,21 @@ const SolutionBuilder = () => {
                     ))}
                   </select>
                 </div>
+                
+                {/* Email (optional) */}
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Your email (optional, to receive your recommendation)
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                  />
+                </div>
 
                 <button
                   type="submit"
@@ -174,6 +232,12 @@ const SolutionBuilder = () => {
               </form>
             ) : (
               <div className="space-y-6">
+                {error && (
+                  <div className="p-3 bg-red-50 border border-red-200 rounded-md text-red-800 text-sm mb-4">
+                    {error}
+                  </div>
+                )}
+                
                 <div className="border-b border-gray-200 pb-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Recommended Solution</h3>
                   <p className="text-gray-600">

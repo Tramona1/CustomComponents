@@ -2,7 +2,15 @@
 
 import { useState } from 'react';
 
-const EmailForm = () => {
+type EmailFormProps = {
+  formType?: string;
+  pageLocation?: string;
+};
+
+const EmailForm = ({ 
+  formType = 'Newsletter Subscription', 
+  pageLocation = 'Home Page' 
+}: EmailFormProps) => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -24,14 +32,33 @@ const EmailForm = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call
     try {
-      // In a real application, you would send this data to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send the form data to our API endpoint
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          subject: 'New Website Inquiry',
+          message: 'A user has submitted the contact form on singletonsgroup.com and requested more information.',
+          formType: formType,
+          page: pageLocation
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
       
+      // Success! Form was submitted and email was sent
       setIsSubmitted(true);
       setEmail('');
     } catch (err) {
+      console.error('Error submitting form:', err);
       setError('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
