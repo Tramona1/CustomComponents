@@ -73,10 +73,10 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold text-text-main mb-6 leading-tight tracking-tight">
-              Looking for an AI Solution? We Make It Simple.
+             AI should enhance your business, not complicate it
               </h1>
               <p className="text-lg md:text-xl text-text-sub mb-8 leading-relaxed">
-              AI should be straightforward and effective, not overwhelming. We partner with you to understand your unique challenges and select the best tools from our network of over 1,000 AI solutions—tailored to fit your business perfectly. </p>
+              We partner with you to understand your unique challenges, then find or create the best solution from our 1,000+ company network—handling everything, from integration to securing the best price, so you see real results with AI fast. </p>
               <div className="flex flex-col sm:flex-row gap-5">
                 <Link 
                   href="https://calendly.com/blake-singletonsgroup/30min" 

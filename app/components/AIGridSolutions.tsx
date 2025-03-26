@@ -275,7 +275,7 @@ ${formData.needs}
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-text-main mb-4">
             AI Solutions Catalog
           </h2>
         </div>
@@ -363,7 +363,7 @@ ${formData.needs}
                     )}
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900">{solution.title}</h3>
+                    <h3 className="text-lg font-bold text-text-main">{solution.title}</h3>
                     <div className="flex flex-wrap gap-2 mt-1">
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                         {solution.industry}
@@ -428,7 +428,7 @@ ${formData.needs}
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">Custom AI Solution</h3>
+                  <h3 className="text-lg font-bold text-text-main">Custom AI Solution</h3>
                   <div className="flex flex-wrap gap-2 mt-1">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">
                       All Industries
@@ -491,7 +491,7 @@ ${formData.needs}
               {!formSubmitted ? (
                 <>
                   <div className="flex justify-between items-start mb-4">
-                    <h2 className="text-xl font-bold text-gray-900">
+                    <h2 className="text-xl font-bold text-text-main">
                       {formData.solutionId === 'custom' 
                         ? 'Request a Custom AI Solution' 
                         : `Inquire About: ${selectedSolution?.title}`}
@@ -612,7 +612,7 @@ ${formData.needs}
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Inquiry Submitted!</h3>
+                  <h3 className="text-lg font-medium text-text-main mb-2">Inquiry Submitted!</h3>
                   <p className="text-gray-500 mb-6">
                     Thank you for your interest. Our team will contact you shortly to discuss your needs and how we can help.
                   </p>

@@ -1,7 +1,7 @@
 {
   "/why-choose-us/page": "app/why-choose-us/page.js",
-  "/how-it-works/page": "app/how-it-works/page.js",
   "/success-stories/page": "app/success-stories/page.js",
-  "/page": "app/page.js",
-  "/partners/page": "app/partners/page.js"
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/partners/page": "app/partners/page.js",
+  "/page": "app/page.js"
 }

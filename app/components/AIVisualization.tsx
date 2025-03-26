@@ -145,7 +145,7 @@ export default function AIVisualization({
                     type="submit"
                     className="w-full bg-white hover:bg-blue-50 text-[#1E3A8A] font-bold py-3 px-4 rounded-md transition-colors duration-200 shadow-lg"
                   >
-                    I am interested in learning more
+                    I'm interested in learning more
                   </button>
                 </form>
               )}
