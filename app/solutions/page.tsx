@@ -10,6 +10,7 @@ import AIGridSolutions from '../components/AIGridSolutions';
 import { allAISolutions } from '../data/aiSolutions';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import WaveSeparator from '../components/WaveSeparator';
 
 export default function Solutions() {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,6 +51,9 @@ export default function Solutions() {
         </div>
       </section>
 
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
+
       {/* Text Section - New Style */}
       <section className="bg-white pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,11 +68,20 @@ export default function Solutions() {
       {/* Solution Bundles Section */}
       <SolutionBundles />
 
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
+
       {/* Integration Visual */}
       <IntegrationVisual />
       
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
+      
       {/* All AI Solutions Grid */}
       <AIGridSolutions solutions={allAISolutions} />
+
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
 
       {/* Solution Builder */}
       <div id="customSolution" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">

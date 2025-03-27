@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PricingContent from '../components/PricingContent';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import WaveSeparator from '../components/WaveSeparator';
 
 export const metadata: Metadata = {
   title: 'Pricing | SingletonsGroup',
@@ -28,8 +29,14 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
+
       {/* Pricing Section */}
       <PricingContent />
+
+      {/* Add Wave Separator before CTA */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-primary" />
 
       {/* CTA Section */}
       <CTASection />

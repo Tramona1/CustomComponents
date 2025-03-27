@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import WaveSeparator from '../components/WaveSeparator';
 
 export const metadata: Metadata = {
   title: 'All AI Solutions - Browse Our Complete Catalog',
@@ -36,8 +37,14 @@ export default function AllSolutionsPage() {
         </div>
       </section>
 
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-white" />
+
       {/* All AI Solutions Grid */}
       <AIGridSolutions solutions={allAISolutions} />
+
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-primary" />
 
       {/* CTA Section */}
       <CTASection />

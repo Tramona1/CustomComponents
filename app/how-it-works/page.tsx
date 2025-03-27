@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import WaveSeparator from '../components/WaveSeparator';
 
 export default function HowItWorks() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -72,6 +73,9 @@ export default function HowItWorks() {
           </div>
         </div>
       </section>
+
+      {/* Add Wave Separator */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-gray-50" />
 
       {/* Visual Timeline Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -273,6 +277,12 @@ export default function HowItWorks() {
           </div>
         </div>
       </section>
+
+      {/* Add Wave Separator before CTA */}
+      <WaveSeparator bgColor="bg-gray-50" nextSectionColor="bg-primary" />
+
+      {/* CTA Section */}
+      <CTASection />
 
       {/* Client Journey Example */}
       <section className="py-16 bg-gray-50">
@@ -480,9 +490,6 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <CTASection />
-      
       {/* Footer */}
       <Footer />
     </div>

@@ -14,6 +14,7 @@ import AIVisualization from './components/AIVisualization';
 import WinningWithAI from './components/WinningWithAI';
 import LogoCarousel from './components/LogoCarousel';
 import CTASection from './components/CTASection';
+import WaveSeparator from './components/WaveSeparator';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
@@ -73,10 +74,14 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold text-text-main mb-6 leading-tight tracking-tight">
-             AI should enhance your business, not complicate it
+                We Make AI Simple and Useful for Your Business
               </h1>
+              <p className="text-lg md:text-xl text-text-sub mb-4 leading-relaxed">
+                From the outside, AI can look complicated, but it shouldn't. We partner with you to help you use AI for what it was made to do—save time, money, and hassle.
+              </p>
               <p className="text-lg md:text-xl text-text-sub mb-8 leading-relaxed">
-              We partner with you to understand your unique challenges, then find or create the best solution from our 1,000+ company network—handling everything, from integration to securing the best price, so you see real results with AI fast. </p>
+                We work with you to understand your unique challenges, then find or create the best solution from our 1,000+ AI company network to fix them. We handle everything, from integration to securing the best price, so you see real results with AI fast.
+              </p>
               <div className="flex flex-col sm:flex-row gap-5">
                 <Link 
                   href="https://calendly.com/blake-singletonsgroup/30min" 
@@ -109,6 +114,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Use the WaveSeparator component */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-gray-50" />
 
       {/* Trusted By Companies Section */}
       <section className="py-12 bg-gray-50 border-y border-gray-100">

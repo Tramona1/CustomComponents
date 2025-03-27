@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Image from 'next/image';
 import CTASection from '../components/CTASection';
+import WaveSeparator from '../components/WaveSeparator';
 
 export const metadata: Metadata = {
   title: 'Why Choose Us | SingletonsGroup',
@@ -17,6 +18,9 @@ export default function WhyChooseUsPage() {
   return (
     <div className="bg-white">
       <WhyChooseUs />
+
+      {/* Add Wave Separator before CTA */}
+      <WaveSeparator bgColor="bg-white" nextSectionColor="bg-primary" />
 
       {/* CTA Section */}
       <CTASection />
