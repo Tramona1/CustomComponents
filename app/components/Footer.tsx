@@ -11,9 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-3">
-                <span className="text-white font-bold">AI</span>
-              </div>
+              <img src="/images/logo.png" alt="SingletonsGroup Logo" className="w-10 h-10 mr-3" />
               <span className="text-xl font-bold text-text-main">SingletonsGroup</span>
             </div>
             <p className="text-text-sub mb-6">

@@ -75,9 +75,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center mr-1 sm:mr-2">
-                <span className="text-white font-bold text-xs sm:text-base">AI</span>
-              </div>
+              <img src="/images/logo.png" alt="SingletonsGroup Logo" className="w-8 h-8 sm:w-10 sm:h-10 mr-1 sm:mr-2" />
               <span className="font-bold text-base sm:text-xl text-text-main">SingletonsGroup</span>
             </Link>
           </div>
@@ -204,9 +202,7 @@ const Header = () => {
             {/* Mobile menu header with close button */}
             <div className="px-4 py-3 flex items-center justify-between border-b border-gray-100">
               <Link href="/" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center mr-1.5">
-                  <span className="text-white font-bold text-xs">AI</span>
-                </div>
+                <img src="/images/logo.png" alt="SingletonsGroup Logo" className="w-8 h-8 mr-1.5" />
                 <span className="font-bold text-base text-text-main">SingletonsGroup</span>
               </Link>
               <button 

@@ -532,7 +532,7 @@ export default function WhyUs() {
                 <p className="text-xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto">
                   Book a free consultation to see how we can help you navigate the AI landscape and implement solutions that drive real results.
                 </p>
-                <Link 
+                <Link
                   href="https://calendly.com/blake-singletonsgroup/30min" 
                   target="_blank"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-md text-primary bg-white hover:bg-opacity-90 md:text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"

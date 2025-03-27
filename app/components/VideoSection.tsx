@@ -32,7 +32,7 @@ const VideoSection = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold text-black mb-2">We Find the Right Tools</h4>
-              <p className="text-black text-lg">From our network of 1000+ AI partners, we tailor the perfect solutions that fit your needs</p>
+              <p className="text-black text-lg">From our network of 1000+ AI partners, we tailor the perfect solutions that fit your needs and budget. We have options at all price points, ensuring businesses of any size can benefit from AI implementation.</p>
             </div>
           </div>
           
@@ -42,7 +42,7 @@ const VideoSection = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold text-black mb-2">Discuss Use Cases</h4>
-              <p className="text-black text-lg">We have a detailed conversation about specific use cases and how implementing the right AI solutions will enhance your business operations and results.</p>
+              <p className="text-black text-lg">We have a detailed conversation about specific use cases and how implementing the right AI solutions will enhance your business operations and results. Our solutions scale with your business, with flexible pricing options for startups, SMBs, and larger enterprises.</p>
             </div>
           </div>
           

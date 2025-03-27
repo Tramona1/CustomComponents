@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: 'AI Solutions for Small and Medium sized Businesses | SingletonsGroup',
   description: 'Supercharge your small business with AI tools that automate tasks, save time, and boost growth—all set up for you.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://singletonsgroup.com'),
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 };
 
 export default function RootLayout({

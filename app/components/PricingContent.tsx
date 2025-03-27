@@ -477,62 +477,6 @@ export default function PricingContent() {
         </div>
       </section>
 
-      {/* Custom Solution */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-primary/10 to-blue-100 rounded-2xl overflow-hidden">
-            <div className="md:flex items-center">
-              <div className="md:w-1/2 p-8 md:p-12">
-                <h2 className="text-3xl font-bold text-text-main mb-4">Why We Can't List Exact Prices</h2>
-                <h3 className="text-xl font-semibold text-text-main mb-2">AI Pricing Is Complex and Variable</h3>
-                <p className="text-lg font-medium text-primary mb-4">Different for Every Business</p>
-                <p className="text-text-sub mb-6">
-                  Each AI provider uses a different pricing model: per API call, per user, per task, subscription-based, or usage-based. Your specific needs and volume will determine the actual costs, which is why we create custom quotes.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-text-sub">Some AI tools charge per API call (from $0.01 to $0.50 per call)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-text-sub">Others use monthly subscriptions ($50-$1000/month)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-text-sub">We negotiate the best rates and provide a transparent quote</span>
-                  </li>
-                </ul>
-                <a
-                  href="#quote-form"
-                  className="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-medium bg-primary text-white hover:bg-primary-dark transition-all"
-                >
-                  Get Your Custom Quote
-                </a>
-              </div>
-              <div className="md:w-1/2 p-8 hidden md:flex justify-center">
-                <div className="relative w-full max-w-sm">
-                  <div className="absolute inset-0 rounded-full bg-primary opacity-5 blur-3xl"></div>
-                  <div className="relative z-10">
-                    <svg className="w-full h-full text-primary opacity-50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm0 180c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" fill="currentColor"/>
-                      <path d="M100 40c-33.1 0-60 26.9-60 60s26.9 60 60 60 60-26.9 60-60-26.9-60-60-60zm0 100c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40z" fill="currentColor"/>
-                      <circle cx="100" cy="100" r="20" fill="currentColor"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How Pricing Works */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
