@@ -8,6 +8,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 // Target email that will receive form submissions
 const TARGET_EMAIL = 'blakesingleton@hotmail.com';
 
+// Simple delay function to avoid rate limiting
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 export async function POST(request: Request) {
   try {
     const { 
@@ -66,6 +69,9 @@ export async function POST(request: Request) {
       console.error('Error sending admin email:', adminEmailResult.error);
       return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
     }
+    
+    // Wait for 1.5 seconds to avoid rate limiting
+    await delay(1500);
     
     // Build personalized greeting and content
     const companyGreeting = businessName ? `the team at ${businessName}` : 'there';
@@ -199,6 +205,71 @@ export async function POST(request: Request) {
 
     if (userEmailResult.error) {
       console.error('Error sending user auto-response email:', userEmailResult.error);
+      
+      // If we hit a rate limit, retry once after a longer delay
+      if (userEmailResult.error && 
+          typeof userEmailResult.error === 'object' && 
+          'statusCode' in userEmailResult.error && 
+          userEmailResult.error.statusCode === 429) {
+        console.log('Rate limit hit, retrying after a delay...');
+        
+        // Wait for 3 seconds before retrying
+        await delay(3000);
+        
+        // Try sending the auto-response email again
+        const retryEmailResult = await resend.emails.send({
+          from: 'onboarding@resend.dev',
+          to: email,
+          subject: 'Thank you for contacting SingletonsGroup',
+          html: `
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
+              <div style="text-align: center; margin-bottom: 20px;">
+                <div style="background-color: #0057D9; display: inline-block; width: 40px; height: 40px; border-radius: 50%; color: white; line-height: 40px; margin-right: 10px; font-weight: bold; font-size: 16px;">AI</div>
+                <span style="font-size: 20px; font-weight: bold; vertical-align: middle; color: #333;">SingletonsGroup</span>
+              </div>
+              
+              <div style="background-color: #f7f9fc; border-radius: 8px; padding: 30px; margin-bottom: 20px; border-left: 4px solid #0057D9;">
+                <h2 style="margin-top: 0; color: #0057D9; font-size: 22px;">Thank You for Reaching Out, ${companyGreeting}!</h2>
+                
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">We're excited to help you explore how AI can transform your business operations and results.${industryMessage}${sizeMessage}${painPointMessage}</p>
+                
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;"><strong>What Happens Next:</strong></p>
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">A member of our team will reach out to you within the next 24 hours to discuss potential solutions tailored to your specific needs.</p>
+                
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 25px;"><strong>Want to Skip the Wait?</strong> You can book a call right now using the link below:</p>
+                
+                <div style="text-align: center; margin: 30px 0;">
+                  <a href="https://calendly.com/blake-singletonsgroup/30min" style="display: inline-block; background-color: #0057D9; color: white; padding: 14px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Schedule Your Free Consultation</a>
+                  <p style="font-size: 14px; color: #666; margin-top: 10px;">30 minutes to discuss your needs and explore AI solutions</p>
+                </div>
+                
+                <p style="font-size: 16px; line-height: 1.6; font-style: italic; color: #555; margin-top: 25px;">We're looking forward to showing you how the right AI tools can save you time, reduce costs, and help your business grow—all without requiring any technical expertise on your part.</p>
+              </div>
+              
+              <div style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                <div style="margin-top: 20px;">
+                  <p style="font-size: 14px; color: #666; margin-bottom: 10px;">Connect with us:</p>
+                  <div>
+                    <a href="https://singletonsgroup.com" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Website</a>
+                    <a href="mailto:blakesingleton@hotmail.com" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Email</a>
+                    <a href="tel:4258778881" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Call (425) 877-8881</a>
+                  </div>
+                </div>
+                
+                <p style="font-size: 12px; color: #999; margin-top: 30px;">© ${new Date().getFullYear()} SingletonsGroup. All rights reserved.</p>
+              </div>
+            </div>
+          `,
+        });
+        
+        if (retryEmailResult.error) {
+          console.error('Error on retry of auto-response email:', retryEmailResult.error);
+        } else {
+          console.log('Auto-response email sent successfully on retry!');
+          userEmailResult.data = retryEmailResult.data;
+        }
+      }
+      
       // Still return success since we sent the admin email successfully
     }
     
