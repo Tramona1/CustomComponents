@@ -10,7 +10,7 @@ async function sendTestEmails() {
     console.log("Testing admin notification email...");
     const adminEmail = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'blake@singletonsgroup.com',
+      to: 'blakesingleton@hotmail.com',
       subject: 'Test: AI Strategy Request Submission',
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
@@ -48,7 +48,7 @@ async function sendTestEmails() {
     console.log("\nTesting user auto-response email...");
     const userEmail = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'blake@singletonsgroup.com', // Sending to admin for testing
+      to: 'blakesingleton@hotmail.com', // Sending to admin for testing
       subject: 'Thank you for contacting SingletonsGroup',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
@@ -78,7 +78,7 @@ async function sendTestEmails() {
               <p style="font-size: 14px; color: #666; margin-bottom: 10px;">Connect with us:</p>
               <div>
                 <a href="https://singletonsgroup.com" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Website</a>
-                <a href="mailto:blake@singletonsgroup.com" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Email</a>
+                <a href="mailto:blakesingleton@hotmail.com" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Email</a>
                 <a href="tel:4258778881" style="color: #0057D9; text-decoration: none; margin: 0 10px;">Call</a>
               </div>
             </div>
