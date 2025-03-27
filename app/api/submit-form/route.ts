@@ -36,7 +36,7 @@ export async function POST(request: Request) {
 
     // STEP 1: Send notification email to admin
     const adminEmailResult = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Using Resend's verified sender domain
+      from: 'info@singletonsgroup.com', // Using verified sender domain
       to: TARGET_EMAIL,
       subject: enhancedSubject,
       html: `
@@ -125,7 +125,7 @@ export async function POST(request: Request) {
     
     // STEP 2: Send auto-response email to the user
     const userEmailResult = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Using Resend's verified sender domain
+      from: 'info@singletonsgroup.com', // Using verified sender domain
       to: email,
       subject: 'Thank you for contacting SingletonsGroup',
       html: `
@@ -206,7 +206,7 @@ export async function POST(request: Request) {
     if (userEmailResult.error) {
       console.error('Error sending user auto-response email:', userEmailResult.error);
       
-      // If we hit a rate limit, retry once after a longer delay
+      // Handle rate limit errors
       if (userEmailResult.error && 
           typeof userEmailResult.error === 'object' && 
           'statusCode' in userEmailResult.error && 
@@ -218,7 +218,7 @@ export async function POST(request: Request) {
         
         // Try sending the auto-response email again
         const retryEmailResult = await resend.emails.send({
-          from: 'onboarding@resend.dev',
+          from: 'info@singletonsgroup.com', // Using verified sender domain
           to: email,
           subject: 'Thank you for contacting SingletonsGroup',
           html: `
@@ -268,6 +268,15 @@ export async function POST(request: Request) {
           console.log('Auto-response email sent successfully on retry!');
           userEmailResult.data = retryEmailResult.data;
         }
+      } 
+      // Handle domain verification errors
+      else if (userEmailResult.error && 
+          typeof userEmailResult.error === 'object' && 
+          'statusCode' in userEmailResult.error && 
+          userEmailResult.error.statusCode === 403 &&
+          'name' in userEmailResult.error &&
+          userEmailResult.error.name === 'validation_error') {
+        console.error('Domain verification error: Please ensure the domain singletonsgroup.com is properly verified in Resend and that the from address is using this domain.');
       }
       
       // Still return success since we sent the admin email successfully
